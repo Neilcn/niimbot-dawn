@@ -69,7 +69,8 @@
         "@media screen and (min-width: 990px) {.header--middle-left {grid-template-columns: auto auto auto; }}"
       ],
       "settings": {
-        "regular_layout": "label-pack",
+        "regular_layout": "label-pack,labels-ribbons",
+        "thumbnail_layout": "scenarious",
         "logo_position": "middle-left",
         "mobile_logo_position": "center",
         "menu": "main-menu",
