@@ -1,0 +1,42 @@
+{% liquid
+  assign cart_total = cart.total_price | plus: 0.00
+  assign free_shipping_threshold = settings.free_shipping_threshold | plus: 0.00
+  assign money_left = free_shipping_threshold | minus: cart_total
+  assign loading_percent = cart_total | divided_by: free_shipping_threshold | times: 100.00
+
+  if loading_percent >= 100.00
+    assign loading_percent = 100.00
+  endif
+%}
+
+<div class="shipping-widget {{ class }}" {{ block.shopify_attributes }}>
+  <div class="shipping-widget-holder text-center">
+
+
+    <div class="shipping-widget-bar" aria-hidden="true">
+      <div>
+        <span class="h6" aria-hidden="true">
+          {{ 0 | money_without_trailing_zeros }}
+        </span>
+      </div>
+      <div class="bar" aria-hidden="true">
+        <div class="progress-bar">
+          <div class="progress-bar-inner" style="width:{{ loading_percent }}%;"></div>
+        </div>
+      </div>
+      <div>
+        <span class="h6" aria-hidden="true">
+          {{ free_shipping_threshold | money_without_trailing_zeros }}
+        </span>
+      </div>
+    </div>
+
+        <p>
+      {% if money_left <= 0 %}
+        You qualify for <strong>FREE SHIPPING!</strong>
+      {% else %}
+        You're <strong>{{ money_left | money }}</strong> Away From <strong>FREE SHIPPING*</strong>
+      {% endif %}
+    </p>
+  </div>
+</div>

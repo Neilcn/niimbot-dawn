@@ -1,0 +1,60 @@
+{%- assign section_block_count = 0 -%}
+{%- for block in blocks -%}
+  {%- if block.settings.menu_handle == link_handle -%}
+    {%- assign section_block_count = section_block_count | plus: 1 -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{% assign block_count = 1 %}
+{% assign block_width = 0 %}
+
+{%- for block in blocks -%}
+
+  {%- if block.type == 'promotion' and block.settings.menu_handle == link_handle -%}
+
+    <div class="promo-card {{block_width}}">
+      <div class="card w-100 border-0 rounded-0">
+        <div class="ratio ratio-16x9">
+          <img src="{{ block.settings.image | img_url: 'master' }}" class="card-img-top" alt="{{ block.settings.image.alt }}">
+        </div>
+        <div class="card-body px-0">
+          {%- if block.settings.title != blank -%}
+            {% if block.settings.link != blank %} <a href="{{ block.settings.link }}">{% endif %}
+              <p class="card-title">{{ block.settings.title }}</p>
+            {% if block.settings.link != blank %}</a>{% endif %}
+          {%- endif -%}
+        </div>
+      </div>
+
+    </div>
+
+    {% assign block_count = block_count | plus: 1 %}
+    {% assign block_width = block_width | plus: 1 %}
+
+  {%- endif -%}
+
+  {%- if block.type == 'promotion2' and block.settings.menu_handle == link_handle -%}
+
+    <div class="promo-card {% if section.settings.full_width_image %}full-width-image{% endif %} w-50 {{block_width}}" >
+      <div class="card w-100 border-0 rounded-0">
+        <div class="ratio ratio-16x9">
+          <img src="{{ block.settings.image | img_url: 'master' }}" class="card-img-top" alt="{{ block.settings.image.alt }}">
+        </div>
+        <div class="card-body px-0">
+          {%- if block.settings.title != blank -%}
+            {% if block.settings.link != blank %} <a href="{{ block.settings.link }}">{% endif %}
+              <p class="card-title">{{ block.settings.title }}</p>
+            {% if block.settings.link != blank %}</a>{% endif %}
+          {%- endif -%}
+        </div>
+      </div>
+
+    </div>
+
+    {% assign block_count = block_count | plus: 1 %}
+    {% assign block_width = block_width | plus: 2 %}
+    
+
+  {%- endif -%}
+
+{%- endfor -%}
