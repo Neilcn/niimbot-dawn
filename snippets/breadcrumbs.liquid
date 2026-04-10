@@ -1,0 +1,108 @@
+{%- comment -%}
+  Dawn-Compatible Breadcrumbs with JSON-LD Structured Data
+{%- endcomment -%}
+
+{% stylesheet %}
+  .breadcrumb {
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .breadcrumb__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .breadcrumb__item:not(:last-child)::after {
+    content: '/';
+    margin-left: 0.4rem;
+    opacity: 0.5;
+  }
+
+  .breadcrumb__link {
+    text-decoration: none;
+    color: rgba(var(--color-foreground), .75);
+  }
+
+  .breadcrumb__link:hover {
+    text-decoration: underline;
+  }
+{% endstylesheet %}
+
+{%- assign breadcrumb_collection = collection -%}
+
+{%- if template contains 'product' and breadcrumb_collection == blank -%}
+  {%- assign breadcrumb_collection = product.collections.first -%}
+{%- endif -%}
+
+<nav class="breadcrumb page-width" role="navigation" aria-label="breadcrumbs">
+  <ol class="breadcrumb__list list-unstyled">
+    <li class="breadcrumb__item">
+      <a href="{{ routes.root_url }}" class="breadcrumb__link">Home</a>
+    </li>
+
+    {%- if template contains 'collection' and collection -%}
+      <li class="breadcrumb__item">
+        <span class="breadcrumb__text">{{ collection.title }}</span>
+      </li>
+    {%- elsif template contains 'product' and product -%}
+      {%- if breadcrumb_collection -%}
+        <li class="breadcrumb__item">
+          <a href="{{ breadcrumb_collection.url }}" class="breadcrumb__link">
+            {{ breadcrumb_collection.title }}
+          </a>
+        </li>
+      {%- endif -%}
+      <li class="breadcrumb__item">
+        <span class="breadcrumb__text">{{ product.title }}</span>
+      </li>
+    {%- endif -%}
+  </ol>
+</nav>
+
+{%- comment -%}
+  JSON-LD Structured Data
+{%- endcomment -%}
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "{{ shop.url }}"
+      }
+      {%- assign position = 2 -%}
+      {%- if template contains 'collection' and collection -%},
+      {
+        "@type": "ListItem",
+        "position": {{ position }},
+        "name": {{ collection.title | json }},
+        "item": "{{ shop.url }}{{ collection.url }}"
+      }
+      {%- elsif template contains 'product' and product -%}
+        {%- if breadcrumb_collection -%},
+        {
+          "@type": "ListItem",
+          "position": {{ position }},
+          "name": {{ breadcrumb_collection.title | json }},
+          "item": "{{ shop.url }}{{ breadcrumb_collection.url }}"
+        }
+        {%- assign position = position | plus: 1 -%}
+        {%- endif -%},
+        {
+          "@type": "ListItem",
+          "position": {{ position }},
+          "name": {{ product.title | json }},
+          "item": "{{ shop.url }}{{ product.url }}"
+        }
+      {%- endif -%}
+    ]
+  }
+</script>

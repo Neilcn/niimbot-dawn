@@ -14,7 +14,12 @@
 
 {%- if section.settings.menu_type_desktop == 'mega' -%}
   {% comment %} <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'"> {% endcomment %}
-  <link rel="stylesheet" href="{{ 'component-mega-menu-promotion.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link
+    rel="stylesheet"
+    href="{{ 'component-mega-menu-promotion.css' | asset_url }}"
+    media="print"
+    onload="this.media='all'"
+  >
   <noscript>{{ 'component-mega-menu-promotion.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
 
@@ -475,18 +480,18 @@
   "class": "section-header",
   "max_blocks": 3,
   "settings": [
-            {
-          "type": "text",
-          "id": "regular_layout",
-          "label": "Regular layout megumenu",
-          "info": "Menu handles separated by commas"
-        },
-                    {
-          "type": "text",
-          "id": "thumbnail_layout",
-          "label": "Thumbnail layout megumenu",
-          "info": "Menu handles separated by commas"
-        },
+    {
+      "type": "text",
+      "id": "regular_layout",
+      "label": "Regular layout megumenu",
+      "info": "Menu handles separated by commas"
+    },
+    {
+      "type": "text",
+      "id": "thumbnail_layout",
+      "label": "Thumbnail layout megumenu",
+      "info": "Menu handles separated by commas"
+    },
     {
       "type": "select",
       "id": "logo_position",

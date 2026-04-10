@@ -49,7 +49,7 @@
 
               <div
                 id="MegaMenu-Content-{{ forloop.index }}"
-                class="mega-menu__content {% if section.settings.full_width_image %}full-width-image{% endif %} color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
+                class="mega-menu__content thumbnail-layout {% if section.settings.full_width_image %}full-width-image{% endif %} color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
                 tabindex="-1"
               >
               
@@ -123,11 +123,12 @@
               
               <div
                 id="MegaMenu-Content-{{ forloop.index }}"
-                class="mega-menu__content {% if section.settings.full_width_image %}full-width-image{% endif %} color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
+                class="mega-menu__content vertical-layout {% if section.settings.full_width_image %}full-width-image{% endif %} color-{{ section.settings.menu_color_scheme }} gradient motion-reduce global-settings-popup"
                 tabindex="-1"
               >
               
                 <div class="page-width rootmenu {% if section.settings.full_width_image %}full-width-image{% endif %}">
+
                   <div class="rootmenu menu-wrapper">
                   <p class="menu-title h6">{{link.title}}</p>
                   <ul
@@ -190,7 +191,15 @@
                                         </a>
                                       </li>
                                     {%- endfor -%}
+
                                   </ul>
+                                                                      {% if childlink.handle=="thermal-printer" %}
+                                      <p><span>Direct thermal, no ink, text may fade after 1.5 years.</span></p>
+                                    {% endif %}
+                                    {% if childlink.handle=="thermal-transfer-printer" %}
+                                      <p><span>With ribbon, permanent print, text never disappears.</span></p>
+                                    {% endif %}
+                                  
                                 {%- endif -%}
 
                               </div>
@@ -216,8 +225,9 @@
                       </li>
                     {%- endfor -%}
                   </ul>
+
                   </div>
-                  
+
                   <div class="promo-card-wrapper page-width {% if section.settings.full_width_image %}full-width-image{% endif %}">{% render 'menu-promo-blocks', blocks: section.blocks, link_handle: link_handle %}</div>
                 </div>
               </div>
