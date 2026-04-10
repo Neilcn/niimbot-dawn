@@ -162,7 +162,7 @@ details[open]>.header__menu-item {
   grid-template-columns: repeat(6, 1fr);
 }
 
-.rootmenu.menu-wrapper.thumbnail-layout li {
+.rootmenu.menu-wrapper.thumbnail-layout li a {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -170,7 +170,8 @@ details[open]>.header__menu-item {
 }
 
 .rootmenu.menu-wrapper.thumbnail-layout li img {
-  max-width: 34px;
+    max-width: 120px;
+    border-radius: 5px;
 }
 
 .submenu.page-width {
@@ -190,7 +191,7 @@ details[open]>.header__menu-item {
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 
 .submenu.menu-wrapper ul li {
@@ -214,13 +215,15 @@ details[open]>.header__menu-item {
   color: #000;
 }
 
-.submenu.menu-wrapper ul li img {
+.submenu.menu-wrapper ul > li > a img,
+.rootmenu.menu-wrapper.thumbnail-layout ul > li > a img {
   width: 100%;
   transition: transform var(--duration-default) ease;
   transform-origin: center;
 }
 
-.submenu.menu-wrapper ul li:hover img {
+.submenu.menu-wrapper ul > li:hover > a img,
+.rootmenu.menu-wrapper.thumbnail-layout ul > li:hover > a img {
   transform: scale(1.05);
 }
 
@@ -520,4 +523,9 @@ details.mega-menu:hover .mega-menu__content.triger-animation {
 .mega-menu__content.regular-layout .mega-menu__link--active {
   color: rgb(var(--color-foreground));
   text-decoration: underline;
+}
+
+.grandchildlink-text {
+  font-size: 1.4rem;
+  padding: 10px 0;
 }
