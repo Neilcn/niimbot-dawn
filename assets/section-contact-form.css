@@ -14,7 +14,33 @@
   margin-bottom: 1.5rem;
 }
 
+.contact__layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.contact__form {
+  order: 2;
+}
+
+.contact-info {
+  order: 1;
+}
+
 @media screen and (min-width: 750px) {
+  .contact__layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    gap: 4rem;
+    align-items: start;
+  }
+
+  .contact__form,
+  .contact-info {
+    order: initial;
+  }
+
   .contact .field {
     margin-bottom: 2rem;
   }
