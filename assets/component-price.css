@@ -89,7 +89,10 @@
   color: rgba(var(--color-foreground), 0.75);
   font-size: 1.3rem;
 }
-
+.price__regular .price-item--regular,
+.price__sale .price-item--sale {
+  color: #e95144;
+}
 .unit-price {
   display: block;
   font-size: 1.1rem;

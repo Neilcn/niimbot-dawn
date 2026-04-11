@@ -427,3 +427,164 @@ if (!customElements.get('product-info')) {
     }
   );
 }
+
+if (!customElements.get('sticky-add-to-cart')) {
+  customElements.define(
+    'sticky-add-to-cart',
+    class StickyAddToCart extends HTMLElement {
+      constructor() {
+        super();
+
+        this.sectionId = this.dataset.sectionId;
+        this.triggerSelector = this.dataset.triggerSelector;
+        this.triggerButton = null;
+        this.variantSelect = this.querySelector('.sticky-atc__variant-select');
+        this.priceElements = this.querySelectorAll('.sticky-atc__price');
+        this.image = this.querySelector('.sticky-atc__image');
+        this.quantityInput = this.querySelector('.sticky-atc__qty-input');
+        this.chooseOptionsButton = this.querySelector('.sticky-atc__choose-options');
+        this.unsubscribeVariantChange = null;
+
+        this.updateVisibility = this.updateVisibility.bind(this);
+      }
+
+      connectedCallback() {
+        this.triggerButton = document.querySelector(this.triggerSelector);
+
+        this.bindQuantityButtons();
+        this.bindVariantSelect();
+        this.bindChooseOptionsButton();
+        this.bindVariantSubscription();
+
+        window.addEventListener('scroll', this.updateVisibility, { passive: true });
+        window.addEventListener('resize', this.updateVisibility);
+
+        this.updateVisibility();
+      }
+
+      disconnectedCallback() {
+        window.removeEventListener('scroll', this.updateVisibility);
+        window.removeEventListener('resize', this.updateVisibility);
+        if (this.unsubscribeVariantChange) this.unsubscribeVariantChange();
+      }
+
+      bindVariantSubscription() {
+        if (typeof subscribe !== 'function' || typeof PUB_SUB_EVENTS === 'undefined') return;
+
+        this.unsubscribeVariantChange = subscribe(PUB_SUB_EVENTS.variantChange, ({ data }) => {
+          if (!data || data.sectionId !== this.sectionId || !data.variant) return;
+
+          const variantId = String(data.variant.id);
+          if (this.variantSelect) {
+            const matchingOption = Array.from(this.variantSelect.options).find(
+              (option) => option.value === variantId
+            );
+            if (matchingOption) {
+              this.variantSelect.value = variantId;
+              this.applyVariantOption(matchingOption);
+              return;
+            }
+          }
+
+          this.updateSubmitState(Boolean(data.variant.available));
+        });
+      }
+
+      bindVariantSelect() {
+        if (!this.variantSelect) return;
+
+        this.applyVariantOption(this.variantSelect.selectedOptions[0]);
+        this.variantSelect.addEventListener('change', () => {
+          this.applyVariantOption(this.variantSelect.selectedOptions[0]);
+        });
+      }
+
+      bindChooseOptionsButton() {
+        if (!this.chooseOptionsButton) return;
+
+        this.chooseOptionsButton.addEventListener('click', () => {
+          const targetSelector = this.chooseOptionsButton.dataset.scrollTo;
+          if (!targetSelector) return;
+
+          const target = document.querySelector(targetSelector);
+          if (!target) return;
+
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+          const firstVariantField = target.querySelector(
+            'variant-selects select, variant-selects input[type="radio"], variant-radios input[type="radio"]'
+          );
+          if (firstVariantField) firstVariantField.focus({ preventScroll: true });
+        });
+      }
+
+      bindQuantityButtons() {
+        if (!this.quantityInput) return;
+
+        this.querySelectorAll('[data-quantity-change]').forEach((button) => {
+          button.addEventListener('click', () => {
+            const direction = button.dataset.quantityChange;
+            const currentValue = parseInt(this.quantityInput.value, 10) || 1;
+            const min = parseInt(this.quantityInput.min, 10) || 1;
+            const max = parseInt(this.quantityInput.max, 10) || Infinity;
+            let nextValue = direction === 'decrease' ? currentValue - 1 : currentValue + 1;
+            nextValue = Math.max(min, Math.min(max, nextValue));
+            this.quantityInput.value = nextValue;
+          });
+        });
+
+        this.quantityInput.addEventListener('input', () => {
+          const min = parseInt(this.quantityInput.min, 10) || 1;
+          if (!this.quantityInput.value || parseInt(this.quantityInput.value, 10) < min) {
+            this.quantityInput.value = min;
+          }
+        });
+      }
+
+      applyVariantOption(option) {
+        if (!option) return;
+
+        const isAvailable = option.dataset.available === 'true';
+        const imageUrl = option.dataset.image;
+        const variantPrice = option.dataset.price;
+
+        if (variantPrice) {
+          this.priceElements.forEach((node) => {
+            node.textContent = variantPrice;
+          });
+        }
+
+        if (imageUrl && this.image) {
+          this.image.src = imageUrl;
+        }
+
+        this.updateSubmitState(isAvailable);
+      }
+
+      updateSubmitState(isAvailable) {
+        const addToCartText = window.variantStrings?.addToCart || 'Add to cart';
+        const soldOutText = window.variantStrings?.soldOut || 'Sold out';
+
+        this.querySelectorAll('.sticky-atc__submit').forEach((button) => {
+          button.toggleAttribute('disabled', !isAvailable);
+          const textNode = button.querySelector('span');
+          if (textNode) textNode.textContent = isAvailable ? addToCartText : soldOutText;
+        });
+      }
+
+      updateVisibility() {
+        if (!this.triggerButton) {
+          this.classList.remove('is-visible');
+          return;
+        }
+
+        const triggerRect = this.triggerButton.getBoundingClientRect();
+        const passedTrigger = triggerRect.bottom < 0;
+        const nearBottom =
+          window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 120;
+
+        this.classList.toggle('is-visible', passedTrigger && !nearBottom);
+      }
+    }
+  );
+}

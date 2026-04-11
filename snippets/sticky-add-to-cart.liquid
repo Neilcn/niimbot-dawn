@@ -1,0 +1,167 @@
+{% comment %}
+  Renders the sticky add-to-cart bar for product pages.
+
+  Accepts:
+  - product: Product object
+  - section: Section object
+
+  Usage:
+  {% render 'sticky-add-to-cart', product: product, section: section %}
+{% endcomment %}
+
+{%- liquid
+  assign sticky_variant = product.selected_or_first_available_variant
+  assign sticky_form_id = 'sticky-product-form-' | append: section.id
+  assign sticky_mobile_form_id = 'sticky-product-form-mobile-' | append: section.id
+
+  if sticky_variant.featured_media
+    assign sticky_image = sticky_variant.featured_media.preview_image
+  elsif product.featured_media
+    assign sticky_image = product.featured_media.preview_image
+  endif
+-%}
+
+<sticky-add-to-cart
+  class="sticky-atc"
+  data-section-id="{{ section.id }}"
+  data-trigger-selector="#ProductSubmitButton-{{ section.id }}"
+  data-has-variants="{{ product.has_only_default_variant | json }}"
+>
+  <div class="sticky-atc__inner page-width">
+    <div class="sticky-atc__desktop">
+      <div class="sticky-atc__summary">
+        {%- if sticky_image -%}
+          <img
+            class="sticky-atc__image"
+            src="{{ sticky_image | image_url: width: 120 }}"
+            alt="{{ product.title | escape }}"
+            width="60"
+            height="60"
+            loading="lazy"
+          >
+        {%- endif -%}
+        <div class="sticky-atc__summary-text">
+          <p class="sticky-atc__title">{{ product.title | escape }}</p>
+          <p class="sticky-atc__price" id="StickyAtcPrice-{{ section.id }}">
+            {{ sticky_variant.price | money }}
+          </p>
+        </div>
+      </div>
+
+      <product-form class="sticky-atc__form" data-section-id="{{ section.id }}">
+        <div class="product-form__error-message-wrapper" role="alert" hidden>
+          <span class="svg-wrapper">
+            {{- 'icon-error.svg' | inline_asset_content -}}
+          </span>
+          <span class="product-form__error-message"></span>
+        </div>
+        {%- form 'product',
+          product,
+          id: sticky_form_id,
+          class: 'form sticky-atc__controls',
+          novalidate: 'novalidate',
+          data-type: 'add-to-cart-form'
+        -%}
+          {%- if product.has_only_default_variant -%}
+            <input type="hidden" name="id" value="{{ sticky_variant.id }}" class="product-variant-id">
+          {%- else -%}
+            <label class="visually-hidden" for="StickyVariant-{{ section.id }}">Variant</label>
+            <select id="StickyVariant-{{ section.id }}" name="id" class="sticky-atc__variant-select">
+              {%- for variant in product.variants -%}
+                <option
+                  value="{{ variant.id }}"
+                  data-price="{{ variant.price | money }}"
+                  data-available="{{ variant.available }}"
+                  {% if variant.featured_media %}
+                    data-image="{{ variant.featured_media.preview_image | image_url: width: 120 }}"
+                  {% endif %}
+                  {% if variant.id == sticky_variant.id %}
+                    selected="selected"
+                  {% endif %}
+                >
+                  {{ variant.title | escape }}{% unless variant.available %} - {{ 'products.product.sold_out' | t }}{% endunless %}
+                </option>
+              {%- endfor -%}
+            </select>
+          {%- endif -%}
+
+          <div class="sticky-atc__quantity" role="group" aria-label="{{ 'products.product.quantity.label' | t }}">
+            <button type="button" class="sticky-atc__qty-button" data-quantity-change="decrease" aria-label="Decrease quantity">-</button>
+            <input
+              class="sticky-atc__qty-input"
+              type="number"
+              name="quantity"
+              min="1"
+              value="1"
+              inputmode="numeric"
+            >
+            <button type="button" class="sticky-atc__qty-button" data-quantity-change="increase" aria-label="Increase quantity">+</button>
+          </div>
+
+          <button
+            id="ProductSubmitButton-Sticky-{{ section.id }}"
+            type="submit"
+            name="add"
+            class="product-form__submit button button--primary sticky-atc__submit"
+            {% if sticky_variant.available == false %}
+              disabled
+            {% endif %}
+          >
+            <span>
+              {%- if sticky_variant.available -%}
+                {{ 'products.product.add_to_cart' | t }}
+              {%- else -%}
+                {{ 'products.product.sold_out' | t }}
+              {%- endif -%}
+            </span>
+            {%- render 'loading-spinner' -%}
+          </button>
+        {%- endform -%}
+      </product-form>
+    </div>
+
+    <div class="sticky-atc__mobile">
+      {%- if product.has_only_default_variant -%}
+        <product-form class="sticky-atc__mobile-form" data-section-id="{{ section.id }}">
+          <div class="product-form__error-message-wrapper" role="alert" hidden>
+            <span class="svg-wrapper">
+              {{- 'icon-error.svg' | inline_asset_content -}}
+            </span>
+            <span class="product-form__error-message"></span>
+          </div>
+          {%- form 'product',
+            product,
+            id: sticky_mobile_form_id,
+            class: 'form',
+            novalidate: 'novalidate',
+            data-type: 'add-to-cart-form'
+          -%}
+            <input type="hidden" name="id" value="{{ sticky_variant.id }}" class="product-variant-id">
+            <input type="hidden" name="quantity" value="1">
+            <button
+              type="submit"
+              name="add"
+              class="product-form__submit button button--primary sticky-atc__submit"
+              {% if sticky_variant.available == false %}
+                disabled
+              {% endif %}
+            >
+              <span>
+                {%- if sticky_variant.available -%}
+                  {{ 'products.product.add_to_cart' | t }}
+                {%- else -%}
+                  {{ 'products.product.sold_out' | t }}
+                {%- endif -%}
+              </span>
+              {%- render 'loading-spinner' -%}
+            </button>
+          {%- endform -%}
+        </product-form>
+      {%- else -%}
+        <button type="button" class="button button--primary sticky-atc__choose-options" data-scroll-to="#ProductInfo-{{ section.id }}">
+          Choose options
+        </button>
+      {%- endif -%}
+    </div>
+  </div>
+</sticky-add-to-cart>

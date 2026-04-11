@@ -815,6 +815,8 @@
       {%- endfor -%}
     </div>
 
+    {% render 'sticky-add-to-cart', product: product, section: section %}
+
     {% render 'product-media-modal', variant_images: variant_images %}
 
     {% assign popups = section.blocks | where: 'type', 'popup' %}
