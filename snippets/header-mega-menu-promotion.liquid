@@ -53,7 +53,7 @@
                 >
                   <div class="page-width rootmenu {% if section.settings.full_width_image %}full-width-image{% endif %}">
                     <div class="rootmenu menu-wrapper thumbnail-layout">
-                      <p class="menu-title h6">{{ link.title }}</p>
+                      {% comment %} <p class="menu-title h6">{{ link.title }}</p> {% endcomment %}
                       <ul
                         class="submenu mega-menu__list {% if link.levels == 1 %} mega-menu__list--condensed{% endif %}"
                         role="list"
