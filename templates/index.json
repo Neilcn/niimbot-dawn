@@ -171,8 +171,7 @@
         ".multicolumn-list h3 {line-height: normal;}",
         ".rte p,.link {font-size: 14px;}",
         ".link {padding-top: 20px;}",
-        ".svg-wrapper {display: none;}",
-        ".page-width {max-width: unset;}"
+        ".svg-wrapper {display: none;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
