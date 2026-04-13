@@ -1,1 +1,510 @@
-{"sections":{"slideshow_WrahjT":{"type":"slideshow","blocks":{"slide_iVQKeW":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/banner_1d276617-7575-4b48-8b6a-f25260831ea0.jpg","image_mobile":"shopify:\/\/shop_images\/banner_dfc91a77-1ca4-4e7c-88db-8655b4b99df1.jpg","image_overlay_opacity":0,"heading":"","heading_size":"h1","subheading":"","button_label":"","link":"","button_style_secondary":false,"show_text_box":false,"box_align":"middle-center","text_alignment":"center","text_alignment_mobile":"center","color_scheme":"scheme-1"}},"slide_PHQ6hU":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/10_rolls_at_50_off_banner_fbcd8234-fed6-49d5-981b-1c67bd5a51cd.jpg","image_mobile":"shopify:\/\/shop_images\/10_rolls_at_505_off_banner_mobile.jpg","image_overlay_opacity":0,"heading":"","heading_size":"h1","subheading":"","button_label":"","link":"","button_style_secondary":false,"show_text_box":false,"box_align":"middle-center","text_alignment":"center","text_alignment_mobile":"center","color_scheme":""}},"slide_RjCiNU":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/bb5f2b4174b9a598cc38ffc9bfa17c42.jpg","image_mobile":"shopify:\/\/shop_images\/banner1_ce06d3b8-b29d-43f4-afb1-68511a7d56c2.jpg","image_overlay_opacity":0,"heading":"","heading_size":"h1","subheading":"","button_label":"","link":"","button_style_secondary":false,"show_text_box":false,"box_align":"middle-center","text_alignment":"center","text_alignment_mobile":"center","color_scheme":""}},"slide_qfpAn8":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/Niimbot_B21_d.jpg","image_mobile":"shopify:\/\/shop_images\/Niimbot_B21_m.jpg","image_overlay_opacity":0,"heading":"","heading_size":"h1","subheading":"","button_label":"","link":"","button_style_secondary":false,"show_text_box":false,"box_align":"middle-center","text_alignment":"center","text_alignment_mobile":"center","color_scheme":"scheme-1"}}},"block_order":["slide_iVQKeW","slide_PHQ6hU","slide_RjCiNU","slide_qfpAn8"],"custom_css":[".slideshow__controls {position: absolute; bottom: 10px; width: 100%; border: none;}",".slideshow__autoplay {display: none;}",".slider-button {position: absolute; top: 50%; z-index: 1; background: #ffffffba; border-radius: 50%; opacity: 0;}",".slider-button:hover {background: #fff;}",".slider-button--next {right: 10px;}",".slider-button--prev {left: 10px;}","slideshow-component:hover .slider-button {opacity: 1;}"],"name":"t:sections.slideshow.presets.name","settings":{"layout":"full_bleed","slide_height":"adapt_image","slider_visual":"dots","auto_rotate":true,"change_slides_speed":9,"image_behavior":"none","show_text_below":false,"accessibility_info":"Slideshow about our brand"}},"multicolumn_aiMXwV":{"type":"multicolumn","blocks":{"column_G6zbGe":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/B21-Pro.png","title":"NIIMBOT B21 Pro","text":"<p>2 inch thermal smart label machine<\/p>","link_label":"View details","link":"shopify:\/\/products\/niimbot-b21-pro-300dpi-hd-2-inch-bluetooth-label-printer-red-black-text-options"}},"column_BBM3qm":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/B1.png","title":"NIIMBOT B1","text":"<p>2 inch thermal smart label machine<\/p>","link_label":"View details","link":"shopify:\/\/products\/niimbot-b1-thermal-label-printer-muiticolour"}},"column_V4Y6f9":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/D101.png","title":"NIIMBOT D101","text":"<p>1-inch portable smart label machine<\/p>","link_label":"View details","link":"shopify:\/\/products\/niimbot-d101-smart-thermal-label-printer"}},"column_gcqY7T":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/N1.png","title":"NIIMBOT N1","text":"<p>Half-inch thermal transfer smart label machine<\/p>","link_label":"View details","link":"shopify:\/\/products\/niimbot-n1-portable-bluetooth-label-printer"}}},"block_order":["column_G6zbGe","column_BBM3qm","column_V4Y6f9","column_gcqY7T"],"custom_css":[".multicolumn-card {background: #fff; border-radius: 10px;}",".multicolumn-list h3 {line-height: normal;}",".rte p,.link {font-size: 14px;}",".link {padding-top: 20px;}",".svg-wrapper {display: none;}",".page-width {max-width: unset;}"],"name":"t:sections.multicolumn.presets.name","settings":{"title":"BEST-SELLING LABEL MAKERS","heading_size":"h2","image_width":"full","image_ratio":"adapt","button_label":"","button_link":"","columns_desktop":4,"column_alignment":"center","background_style":"primary","color_scheme":"background-2","columns_mobile":"1","swipe_on_mobile":true,"padding_top":36,"padding_bottom":36,"link_overlay":true}},"multicolumn_GxnrTY":{"type":"multicolumn","blocks":{"column_BPgB47":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/niimbot-B21-thermal-printer-for-stickers-black_4a107118-9531-464c-b4ca-c5bea76a3597.jpg","title":"B21 Pro","text":"<p>• Red & black labels<br\/>• 300 DPI high printing<br\/>• Photo-paper compatible<\/p>","link_label":"","link":"shopify:\/\/products\/niimbot-b21-pro-300dpi-hd-2-inch-bluetooth-label-printer-red-black-text-options"}},"column_npJ7cY":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/lQLPJx_Pdrg8kG3NBADNBACwX2ivBYByjyIJgiGHe55YAA_1024_1024.png","title":"B21","text":"<p>•Thermal printing<br\/>•Compact &portable<br\/>•Bluetooth app editing<\/p>","link_label":"","link":"shopify:\/\/products\/niimbot-b1-thermal-label-printer-muiticolour"}},"column_3ffBUd":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/d110-wh__1.jpg","title":"D110","text":"<p>•Pocket-size<br\/>•Ink-free printing<br\/>•Bluetooth app editing<\/p>","link_label":"","link":"shopify:\/\/products\/niimbot-d101-smart-thermal-label-printer"}},"column_QKEbTH":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/e19a6bbd3c5648f19cebfab2a7e679f5.png","title":"M2","text":"<p>• 2-inch desktop printer<br\/>• Multi-color transfer<br\/>• Retail & office use<\/p>","link_label":"","link":"shopify:\/\/products\/niimbot-n1-portable-bluetooth-label-printer"}}},"block_order":["column_BPgB47","column_npJ7cY","column_3ffBUd","column_QKEbTH"],"custom_css":[".multicolumn-card {background: #fff; border-radius: 10px;}",".multicolumn-list h3 {line-height: normal;}",".rte p,.link {font-size: 14px;}",".link {padding-top: 20px;}",".svg-wrapper {display: none;}",".page-width {max-width: unset;}"],"name":"t:sections.multicolumn.presets.name","settings":{"title":"BEST-SELLING LABEL MAKERS","heading_size":"h2","image_width":"full","image_ratio":"adapt","button_label":"","button_link":"","columns_desktop":4,"column_alignment":"center","background_style":"primary","color_scheme":"background-2","columns_mobile":"1","swipe_on_mobile":true,"padding_top":36,"padding_bottom":36,"link_overlay":true}},"multicolumn_4qmgQQ":{"type":"multicolumn","blocks":{"column_exrTWY":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/d8b126e6f0e843eea6ba78ba84e87ea8.png","title":"Kitchen Labeling","text":"","link_label":"","link":""}},"column_Ktn3Ap":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/ChatGPT_Image_2026_1_23_14_40_41.png","title":"Fragrance Labeling","text":"","link_label":"","link":""}},"column_F44TVt":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/ChatGPT_Image_2026_1_23_14_32_17.png","title":"Lab Labeling","text":"","link_label":"","link":""}}},"block_order":["column_exrTWY","column_Ktn3Ap","column_F44TVt"],"custom_css":[".page-width {max-width: unset;}"],"name":"t:sections.multicolumn.presets.name","settings":{"title":"LABELING SOLUTIONS","heading_size":"h2","image_width":"full","image_ratio":"adapt","button_label":"","button_link":"","columns_desktop":3,"column_alignment":"left","background_style":"none","color_scheme":"","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36,"link_overlay":false}},"177491975492746bf6":{"type":"apps","blocks":{"judge_me_reviews_all_reviews_text_iXUwMq":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/all_reviews_text\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{}}},"block_order":["judge_me_reviews_all_reviews_text_iXUwMq"],"settings":{"include_margins":true}},"video_CWXcFm":{"type":"video","name":"t:sections.video.presets.name","settings":{"heading":"NiiMbot D101 Thermal Printer","heading_size":"h2","enable_video_looping":true,"video_url":"https:\/\/www.youtube.com\/watch?v=nF06SDVWDVs","description":"","full_width":true,"color_scheme":"","padding_top":36,"padding_bottom":36}},"slideshow_RfiX63":{"type":"slideshow","blocks":{"slide_hPfzik":{"type":"slide","settings":{"image":"shopify:\/\/shop_images\/77f97ca73dc2a683eb44283564059381.jpg","image_mobile":"shopify:\/\/shop_images\/10fa96e9572cbfeb654e095dfe5e2fd4.jpg","image_overlay_opacity":0,"heading":"","heading_size":"h1","subheading":"","button_label":"","link":"","button_style_secondary":false,"show_text_box":false,"box_align":"middle-center","text_alignment":"center","text_alignment_mobile":"center","color_scheme":""}}},"block_order":["slide_hPfzik"],"name":"t:sections.slideshow.presets.name","settings":{"layout":"full_bleed","slide_height":"adapt_image","slider_visual":"counter","auto_rotate":false,"change_slides_speed":5,"image_behavior":"none","show_text_below":true,"accessibility_info":""}},"custom_multicolumn_ggnfqM":{"type":"custom-multicolumn","blocks":{"column_ycTb6b":{"type":"column","settings":{"title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","link_label":"","link":""}},"column_nJhFmC":{"type":"column","settings":{"title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","link_label":"","link":""}},"column_hydU6R":{"type":"column","settings":{"title":"Column","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","link_label":"","link":""}},"column_CKgBQh":{"type":"column","settings":{"title":"Column1","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","link_label":"","link":""}},"column_EkHrAc":{"type":"column","settings":{"title":"Column2","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","link_label":"","link":""}},"column_xXfkky":{"type":"column","settings":{"title":"Column3","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","link_label":"","link":""}},"column_rfQrej":{"type":"column","settings":{"title":"Column4","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","link_label":"","link":""}}},"block_order":["column_ycTb6b","column_nJhFmC","column_hydU6R","column_CKgBQh","column_EkHrAc","column_xXfkky","column_rfQrej"],"disabled":true,"name":"Custom multicolumn","settings":{"auto_rotate":true,"change_slides_speed":3,"pagination_style":"counter","layout":"row","title":"Multicolumn","heading_size":"h1","image_width":"full","image_ratio":"adapt","button_label":"","button_link":"","columns_desktop":6,"column_alignment":"left","background_style":"primary","color_scheme":"","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36,"link_overlay":false}}},"order":["slideshow_WrahjT","multicolumn_aiMXwV","multicolumn_GxnrTY","multicolumn_4qmgQQ","177491975492746bf6","video_CWXcFm","slideshow_RfiX63","custom_multicolumn_ggnfqM"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_WrahjT": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_iVQKeW": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/banner_1d276617-7575-4b48-8b6a-f25260831ea0.jpg",
+            "image_mobile": "shopify://shop_images/banner_dfc91a77-1ca4-4e7c-88db-8655b4b99df1.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_PHQ6hU": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/10_rolls_at_50_off_banner_fbcd8234-fed6-49d5-981b-1c67bd5a51cd.jpg",
+            "image_mobile": "shopify://shop_images/10_rolls_at_505_off_banner_mobile.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_RjCiNU": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/bb5f2b4174b9a598cc38ffc9bfa17c42.jpg",
+            "image_mobile": "shopify://shop_images/banner1_ce06d3b8-b29d-43f4-afb1-68511a7d56c2.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
+        "slide_qfpAn8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Niimbot_B21_d.jpg",
+            "image_mobile": "shopify://shop_images/Niimbot_B21_m.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        }
+      },
+      "block_order": [
+        "slide_iVQKeW",
+        "slide_PHQ6hU",
+        "slide_RjCiNU",
+        "slide_qfpAn8"
+      ],
+      "custom_css": [
+        ".slideshow__controls {position: absolute; bottom: 10px; width: 100%; border: none;}",
+        ".slideshow__autoplay {display: none;}",
+        ".slider-button {position: absolute; top: 50%; z-index: 1; background: #ffffffba; border-radius: 50%; opacity: 0;}",
+        ".slider-button:hover {background: #fff;}",
+        ".slider-button--next {right: 10px;}",
+        ".slider-button--prev {left: 10px;}",
+        "slideshow-component:hover .slider-button {opacity: 1;}"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 9,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "multicolumn_aiMXwV": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_G6zbGe": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/B21-Pro.png",
+            "title": "NIIMBOT B21 Pro",
+            "text": "<p>2 inch thermal smart label machine</p>",
+            "link_label": "View details",
+            "link": "shopify://products/niimbot-b21-pro-300dpi-hd-2-inch-bluetooth-label-printer-red-black-text-options"
+          }
+        },
+        "column_BBM3qm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/B1.png",
+            "title": "NIIMBOT B1",
+            "text": "<p>2 inch thermal smart label machine</p>",
+            "link_label": "View details",
+            "link": "shopify://products/niimbot-b1-thermal-label-printer-muiticolour"
+          }
+        },
+        "column_V4Y6f9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/D101.png",
+            "title": "NIIMBOT D101",
+            "text": "<p>1-inch portable smart label machine</p>",
+            "link_label": "View details",
+            "link": "shopify://products/niimbot-d101-smart-thermal-label-printer"
+          }
+        },
+        "column_gcqY7T": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/N1.png",
+            "title": "NIIMBOT N1",
+            "text": "<p>Half-inch thermal transfer smart label machine</p>",
+            "link_label": "View details",
+            "link": "shopify://products/niimbot-n1-portable-bluetooth-label-printer"
+          }
+        }
+      },
+      "block_order": [
+        "column_G6zbGe",
+        "column_BBM3qm",
+        "column_V4Y6f9",
+        "column_gcqY7T"
+      ],
+      "custom_css": [
+        ".multicolumn-card {background: #fff; border-radius: 10px;}",
+        ".multicolumn-list h3 {line-height: normal;}",
+        ".rte p,.link {font-size: 14px;}",
+        ".link {padding-top: 20px;}",
+        ".svg-wrapper {display: none;}",
+        ".page-width {max-width: unset;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "BEST-SELLING LABEL MAKERS",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "link_overlay": true
+      }
+    },
+    "multicolumn_GxnrTY": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_BPgB47": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/niimbot-B21-thermal-printer-for-stickers-black_4a107118-9531-464c-b4ca-c5bea76a3597.jpg",
+            "title": "B21 Pro",
+            "text": "<p>• Red & black labels<br/>• 300 DPI high printing<br/>• Photo-paper compatible</p>",
+            "link_label": "",
+            "link": "shopify://products/niimbot-b21-pro-300dpi-hd-2-inch-bluetooth-label-printer-red-black-text-options"
+          }
+        },
+        "column_npJ7cY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/lQLPJx_Pdrg8kG3NBADNBACwX2ivBYByjyIJgiGHe55YAA_1024_1024.png",
+            "title": "B21",
+            "text": "<p>•Thermal printing<br/>•Compact &portable<br/>•Bluetooth app editing</p>",
+            "link_label": "",
+            "link": "shopify://products/niimbot-b1-thermal-label-printer-muiticolour"
+          }
+        },
+        "column_3ffBUd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/d110-wh__1.jpg",
+            "title": "D110",
+            "text": "<p>•Pocket-size<br/>•Ink-free printing<br/>•Bluetooth app editing</p>",
+            "link_label": "",
+            "link": "shopify://products/niimbot-d101-smart-thermal-label-printer"
+          }
+        },
+        "column_QKEbTH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/e19a6bbd3c5648f19cebfab2a7e679f5.png",
+            "title": "M2",
+            "text": "<p>• 2-inch desktop printer<br/>• Multi-color transfer<br/>• Retail & office use</p>",
+            "link_label": "",
+            "link": "shopify://products/niimbot-n1-portable-bluetooth-label-printer"
+          }
+        }
+      },
+      "block_order": [
+        "column_BPgB47",
+        "column_npJ7cY",
+        "column_3ffBUd",
+        "column_QKEbTH"
+      ],
+      "custom_css": [
+        ".multicolumn-card {background: #fff; border-radius: 10px;}",
+        ".multicolumn-list h3 {line-height: normal;}",
+        ".rte p,.link {font-size: 14px;}",
+        ".link {padding-top: 20px;}",
+        ".svg-wrapper {display: none;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "BEST-SELLING LABEL MAKERS",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "link_overlay": true
+      }
+    },
+    "multicolumn_4qmgQQ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_exrTWY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/d8b126e6f0e843eea6ba78ba84e87ea8.png",
+            "title": "Kitchen Labeling",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Ktn3Ap": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_2026_1_23_14_40_41.png",
+            "title": "Fragrance Labeling",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_F44TVt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_2026_1_23_14_32_17.png",
+            "title": "Lab Labeling",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_exrTWY",
+        "column_Ktn3Ap",
+        "column_F44TVt"
+      ],
+      "custom_css": [],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "LABELING SOLUTIONS",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "link_overlay": false
+      }
+    },
+    "177491975492746bf6": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_all_reviews_text_iXUwMq": {
+          "type": "shopify://apps/judge-me-reviews/blocks/all_reviews_text/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_all_reviews_text_iXUwMq"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "video_CWXcFm": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "NiiMbot D101 Thermal Printer",
+        "heading_size": "h2",
+        "enable_video_looping": true,
+        "video_url": "https://www.youtube.com/watch?v=nF06SDVWDVs",
+        "description": "",
+        "full_width": true,
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "slideshow_RfiX63": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_hPfzik": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/77f97ca73dc2a683eb44283564059381.jpg",
+            "image_mobile": "shopify://shop_images/10fa96e9572cbfeb654e095dfe5e2fd4.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_hPfzik"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": ""
+      }
+    },
+    "custom_multicolumn_ggnfqM": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "column_ycTb6b": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_nJhFmC": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hydU6R": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_CKgBQh": {
+          "type": "column",
+          "settings": {
+            "title": "Column1",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_EkHrAc": {
+          "type": "column",
+          "settings": {
+            "title": "Column2",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xXfkky": {
+          "type": "column",
+          "settings": {
+            "title": "Column3",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_rfQrej": {
+          "type": "column",
+          "settings": {
+            "title": "Column4",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_ycTb6b",
+        "column_nJhFmC",
+        "column_hydU6R",
+        "column_CKgBQh",
+        "column_EkHrAc",
+        "column_xXfkky",
+        "column_rfQrej"
+      ],
+      "disabled": true,
+      "name": "Custom multicolumn",
+      "settings": {
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "pagination_style": "counter",
+        "layout": "row",
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 6,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "link_overlay": false
+      }
+    }
+  },
+  "order": [
+    "slideshow_WrahjT",
+    "multicolumn_aiMXwV",
+    "multicolumn_GxnrTY",
+    "multicolumn_4qmgQQ",
+    "177491975492746bf6",
+    "video_CWXcFm",
+    "slideshow_RfiX63",
+    "custom_multicolumn_ggnfqM"
+  ]
+}
