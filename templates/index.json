@@ -351,7 +351,7 @@
         "enable_video_looping": true,
         "video_url": "https://www.youtube.com/watch?v=nF06SDVWDVs",
         "description": "",
-        "full_width": true,
+        "full_width": false,
         "color_scheme": "",
         "padding_top": 36,
         "padding_bottom": 36
@@ -385,7 +385,7 @@
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
-        "layout": "full_bleed",
+        "layout": "grid",
         "slide_height": "adapt_image",
         "slider_visual": "counter",
         "auto_rotate": false,
