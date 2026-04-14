@@ -11,6 +11,7 @@
   "current": {
     "logo": "shopify://shop_images/logo.webp",
     "logo_width": 120,
+    "free_shipping_threshold": 10000,
     "type_header_font": "sans_serif_n4",
     "heading_scale": 100,
     "type_body_font": "sans_serif_n4",
