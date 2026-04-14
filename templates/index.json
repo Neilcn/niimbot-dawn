@@ -301,12 +301,45 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_HTGjkq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/For_Supermarket_Retail.jpg",
+            "title": "Retail Labeling",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/for-supermarket-retail"
+          }
+        },
+        "column_487n8K": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/For_Students.jpg",
+            "title": "Students Labeling",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/for-students"
+          }
+        },
+        "column_FM7DeN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/For_Electrician.jpg",
+            "title": "Electrician Labeling",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/for-electrician"
+          }
         }
       },
       "block_order": [
         "column_exrTWY",
         "column_Ktn3Ap",
-        "column_F44TVt"
+        "column_F44TVt",
+        "column_HTGjkq",
+        "column_487n8K",
+        "column_FM7DeN"
       ],
       "custom_css": [],
       "name": "t:sections.multicolumn.presets.name",
@@ -321,7 +354,7 @@
         "column_alignment": "left",
         "background_style": "none",
         "color_scheme": "",
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36,
