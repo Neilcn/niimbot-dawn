@@ -49,7 +49,7 @@
                             </span>
                             {{ link.title | escape }}
                           </button>
-                          <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                          <ul class="menu-drawer__menu list-menu childlink" role="list" tabindex="-1">
                             {%- for childlink in link.links -%}
                               <li>
                                 {%- if childlink.links == blank -%}
@@ -60,7 +60,21 @@
                                     {% if childlink.current %}
                                       aria-current="page"
                                     {% endif %}
+                                    style="
+                                      flex-direction: column;
+                                      gap: 5px;
+                                    "
                                   >
+                                    {% assign image_name = childlink.handle | append: '-image.png' %}
+                                    {% assign image_src = images[image_name] %}
+                                    {% if image_src != blank %}
+                                      <img
+                                        src="{{ image_src | image_url }}"
+                                        alt="{{ childlink.title | escape }}"
+                                        width="165"
+                                        height="auto"
+                                      >
+                                    {% endif %}
                                     {{ childlink.title | escape }}
                                   </a>
                                 {%- else -%}
@@ -91,7 +105,7 @@
                                         {{ childlink.title | escape }}
                                       </button>
                                       <ul
-                                        class="menu-drawer__menu list-menu"
+                                        class="menu-drawer__menu list-menu grandchildlink"
                                         role="list"
                                         tabindex="-1"
                                       >
@@ -105,6 +119,16 @@
                                                 aria-current="page"
                                               {% endif %}
                                             >
+                                              {% assign image_name = grandchildlink.handle | append: '-image.png' %}
+                                              {% assign image_src = images[image_name] %}
+                                              {% if image_src != blank %}
+                                                <img
+                                                  src="{{ image_src | image_url }}"
+                                                  alt="{{ grandchildlink.title | escape }}"
+                                                  width="60"
+                                                  height="auto"
+                                                >
+                                              {% endif %}
                                               {{ grandchildlink.title | escape }}
                                             </a>
                                           </li>

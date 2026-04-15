@@ -32,30 +32,29 @@
   aria-label="{{ section.settings.accessibility_info | escape }}"
 >
   {%- if section.settings.auto_rotate and section.blocks.size > 1 -%}
-          <button
-        type="button"
-        class="slider-button slider-button--prev"
-        name="previous"
-        aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
-        aria-controls="Slider-{{ section.id }}"
-      >
-        <span class="svg-wrapper">
-          {{- 'icon-caret.svg' | inline_asset_content -}}
-        </span>
-      </button>
-            <button
-        type="button"
-        class="slider-button slider-button--next"
-        name="next"
-        aria-label="{{ 'sections.slideshow.next_slideshow' | t }}"
-        aria-controls="Slider-{{ section.id }}"
-      >
-        <span class="svg-wrapper">
-          {{- 'icon-caret.svg' | inline_asset_content -}}
-        </span>
-      </button>
+    <button
+      type="button"
+      class="slider-button slider-button--prev"
+      name="previous"
+      aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
+      aria-controls="Slider-{{ section.id }}"
+    >
+      <span class="svg-wrapper">
+        {{- 'icon-caret.svg' | inline_asset_content -}}
+      </span>
+    </button>
+    <button
+      type="button"
+      class="slider-button slider-button--next"
+      name="next"
+      aria-label="{{ 'sections.slideshow.next_slideshow' | t }}"
+      aria-controls="Slider-{{ section.id }}"
+    >
+      <span class="svg-wrapper">
+        {{- 'icon-caret.svg' | inline_asset_content -}}
+      </span>
+    </button>
     <div class="slideshow__controls slideshow__controls--top slider-buttons{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
-
       <div class="slider-counter slider-counter--{{ section.settings.slider_visual }}{% if section.settings.slider_visual == 'counter' or section.settings.slider_visual == 'numbers' %} caption{% endif %}">
         {%- if section.settings.slider_visual == 'counter' -%}
           <span class="slider-counter--current">1</span>
@@ -80,7 +79,6 @@
           </div>
         {%- endif -%}
       </div>
-
 
       {%- if section.settings.auto_rotate -%}
         <button
@@ -122,6 +120,15 @@
         aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
         tabindex="-1"
       >
+        <a
+          class="link-overlay"
+          {% if block.settings.link == blank %}
+            role="link" aria-disabled="true"
+          {% else %}
+            href="{{ block.settings.link }}"
+          {% endif %}
+        >
+        </a>
         <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}">
           {%- if block.settings.image -%}
             {%- liquid
@@ -142,12 +149,22 @@
               {{
                 block.settings.image
                 | image_url: width: 3840
-                | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority, class: 'small-hide'
+                | image_tag:
+                  height: height,
+                  sizes: sizes,
+                  widths: widths,
+                  fetchpriority: fetch_priority,
+                  class: 'small-hide'
               }}
               {{
                 block.settings.image_mobile
                 | image_url: width: 990
-                | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority, class: 'medium-hide large-up-hide'
+                | image_tag:
+                  height: height,
+                  sizes: sizes,
+                  widths: widths,
+                  fetchpriority: fetch_priority,
+                  class: 'medium-hide large-up-hide'
               }}
             {%- else -%}
               {{
@@ -158,7 +175,12 @@
               {{
                 block.settings.image_mobile
                 | image_url: width: 990
-                | image_tag: loading: 'lazy', height: height, sizes: sizes, widths: widths, class: 'medium-hide large-up-hide'
+                | image_tag:
+                  loading: 'lazy',
+                  height: height,
+                  sizes: sizes,
+                  widths: widths,
+                  class: 'medium-hide large-up-hide'
               }}
             {%- endif -%}
           {%- else -%}
@@ -469,12 +491,12 @@
         {
           "type": "header",
           "content": "t:sections.slideshow.blocks.slide.settings.header_button.content"
-        },        
+        },
         {
           "type": "text",
           "id": "button_label",
           "default": "t:sections.slideshow.blocks.slide.settings.button_label.default",
-          "label": "t:sections.slideshow.blocks.slide.settings.button_label.label", 
+          "label": "t:sections.slideshow.blocks.slide.settings.button_label.label",
           "info": "t:sections.slideshow.blocks.slide.settings.button_label.info"
         },
         {
@@ -491,7 +513,7 @@
         {
           "type": "header",
           "content": "t:sections.slideshow.blocks.slide.settings.header_layout.content"
-        },         
+        },
         {
           "type": "checkbox",
           "id": "show_text_box",
@@ -581,7 +603,7 @@
           ],
           "default": "center",
           "label": "t:sections.slideshow.blocks.slide.settings.text_alignment_mobile.label"
-        },        
+        },
         {
           "type": "color_scheme",
           "id": "color_scheme",

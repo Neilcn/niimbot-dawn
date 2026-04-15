@@ -46,12 +46,15 @@ class HeaderMenu extends DetailsDisclosure {
 
     items.forEach(item => {
       item.addEventListener("mouseover", () => {
+        if (item.classList.contains('submenu') && this.subMenus.includes(item)) {
+          this.subMenus.forEach(s => { if (s !== item) s.removeAttribute('open'); });
+        }
         item.setAttribute("open", true);
-        item.querySelector("ul").addEventListener("mouseleave", () => {
-          item.removeAttribute("open");
+        item.querySelector("ul")?.addEventListener("mouseleave", (e) => {
+          if (!e.relatedTarget?.closest('[data-keep-menu]')) item.removeAttribute("open");
         });
-        item.addEventListener("mouseleave", () => {
-          item.removeAttribute("open");
+        item.addEventListener("mouseleave", (e) => {
+          if (!e.relatedTarget?.closest('[data-keep-menu]')) item.removeAttribute("open");
         });
       });
 
@@ -159,7 +162,11 @@ class SubMenu extends DetailsDisclosure {
     super();
     this.submenuDetails = this.querySelector('.mega-menu.submenu');
     this.submenu = this.querySelector('.submenu.mega-menu__content');
-    [this.submenuDetails, this.submenu].forEach(e => { e.addEventListener('mouseout', this.close.bind(this)) })
+    [this.submenuDetails, this.submenu].forEach(e => {
+      e.addEventListener('mouseout', (event) => {
+        if (!event.relatedTarget?.closest('[data-keep-menu]')) this.close();
+      });
+    });
   }
 
 }

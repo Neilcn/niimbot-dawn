@@ -155,6 +155,7 @@ details[open]>.header__menu-item {
 .rootmenu.menu-wrapper.thumbnail-layout {
   width: 100%;
   background-color: unset;
+      padding-top: 20px;
 }
 
 .rootmenu.menu-wrapper.thumbnail-layout ul {
@@ -399,7 +400,17 @@ details.mega-menu:hover .mega-menu__content.triger-animation {
   font-weight: bold;
   text-transform: uppercase;
   font-family: var(--font-heading-family);
+
 }
+
+.mega-menu__link--level-2.all {
+  position: relative;
+    z-index: 1;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+
 
 /* Hover underline animation */
 

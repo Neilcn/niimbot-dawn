@@ -187,6 +187,7 @@
         "background_style": "primary",
         "color_scheme": "background-2",
         "columns_mobile": "1",
+        "carousel_on_desktop": false,
         "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36,
@@ -247,8 +248,7 @@
         ".multicolumn-card {background: #fff; border-radius: 10px;}",
         ".multicolumn-list h3 {line-height: normal;}",
         ".rte p,.link {font-size: 14px;}",
-        ".link {padding-top: 20px;}",
-        ".svg-wrapper {display: none;}"
+        ".link {padding-top: 20px;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -263,6 +263,7 @@
         "background_style": "primary",
         "color_scheme": "background-2",
         "columns_mobile": "1",
+        "carousel_on_desktop": false,
         "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36,
@@ -341,7 +342,10 @@
         "column_487n8K",
         "column_FM7DeN"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".slider-button--next {right: 20px;}",
+        ".slider-button--prev {left: 20px;}"
+      ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "LABELING SOLUTIONS",
@@ -354,8 +358,9 @@
         "column_alignment": "left",
         "background_style": "none",
         "color_scheme": "",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
+        "columns_mobile": "1",
+        "carousel_on_desktop": true,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36,
         "link_overlay": false
