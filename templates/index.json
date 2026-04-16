@@ -422,6 +422,7 @@
       "block_order": [
         "slide_hPfzik"
       ],
+      "disabled": true,
       "name": "t:sections.slideshow.presets.name",
       "settings": {
         "layout": "grid",
