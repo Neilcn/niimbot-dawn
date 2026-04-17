@@ -46,10 +46,17 @@
         }
 
     .complementary-slider li {
+          width: calc((100% - 56px) / 3);
+          flex: 0 0 calc((100% - 56px) / 3);
           padding: 10px;
           background: #f2f2f2;
           border-radius: 5px;
         }
+    @media screen and (max-width: 749px) {
+      .complementary-slider li {
+          width: 100%;
+        }
+    }
 
     .complementary-products .slider-button {
       position: absolute;
@@ -149,7 +156,7 @@
   {%- endif -%}
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
-    {% render 'breadcrumbs' %}
+  {% render 'breadcrumbs' %}
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
       <div class="grid__item product__media-wrapper">
@@ -815,7 +822,7 @@
       {%- endfor -%}
     </div>
 
-    {% render 'sticky-add-to-cart', product: product, section: section %}
+    {% comment %} {% render 'sticky-add-to-cart', product: product, section: section %} {% endcomment %}
 
     {% render 'product-media-modal', variant_images: variant_images %}
 

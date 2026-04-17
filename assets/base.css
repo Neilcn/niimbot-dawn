@@ -3634,3 +3634,13 @@ details-disclosure > details {
     z-index: 3;
   }
 
+.card-title-ellipsis {
+    overflow: hidden;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+product-recommendations {width:100%;}

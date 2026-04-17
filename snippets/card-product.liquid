@@ -117,7 +117,7 @@
               <a
                 href="{{ card_product.url }}"
                 id="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }}"
-                class="full-unstyled-link"
+                class="full-unstyled-link card-title-ellipsis"
                 aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
               >
                 {{ card_product.title | escape }}
@@ -154,7 +154,7 @@
             <a
               href="{{ card_product.url }}"
               id="CardLink-{{ section_id }}-{{ card_product.id }}"
-              class="full-unstyled-link"
+              class="full-unstyled-link card-title-ellipsis"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
             >
               {{ card_product.title | escape }}
@@ -509,7 +509,7 @@
                         </a>
                       </div>
                       <div class="quick-add-modal__content-info--bulk-details large-up-hide">
-                        <a href="{{ card_product.url }}" class="full-unstyled-link">
+                        <a href="{{ card_product.url }}" class="full-unstyled-link card-title-ellipsis">
                           <h3>{{ card_product.title | escape }}</h3>
                         </a>
                         {% render 'price', product: card_product, price_class: '', show_compare_at_price: true %}
