@@ -160,6 +160,13 @@
           "button_vertical_position": "lowest",
           "greeting_message": ""
         }
+      },
+      "1607042082102552966": {
+        "type": "shopify://apps/yuko-order-limits/blocks/order-limit-embed/52f9f134-3e39-4eea-b253-74233a4918d4",
+        "disabled": false,
+        "settings": {
+          "custom_javascript": ""
+        }
       }
     },
     "color_schemes": {
