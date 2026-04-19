@@ -526,6 +526,12 @@ details.mega-menu:hover .mega-menu__content.triger-animation {
   padding-right: 2rem;
 }
 
+.mega-menu__content.regular-layout .regular-layout__list.label-pack{
+  width: fit-content;
+  row-gap: 0;
+  flex-direction: column;
+}
+
 .mega-menu__content.regular-layout .mega-menu__link {
   display: block;
 }
