@@ -44,7 +44,14 @@
         "text_7EK6ae": {
           "type": "text",
           "settings": {
-            "text": "⚠️ International Shipping NoticeThis item is shipped from our overseas warehouse.Estimated delivery to Australia & New Zealand: 10-14 business days",
+            "text": "⚠️ International Shipping Notice",
+            "text_style": "body"
+          }
+        },
+        "text_n3Wnwa": {
+          "type": "text",
+          "settings": {
+            "text": "This item is shipped from our overseas warehouse.Estimated delivery to Australia & New Zealand: 10-14 business days",
             "text_style": "body"
           }
         },
@@ -102,6 +109,7 @@
         "price",
         "variant_picker",
         "text_7EK6ae",
+        "text_n3Wnwa",
         "quantity_selector",
         "buy_buttons",
         "popup_txG4dj",
