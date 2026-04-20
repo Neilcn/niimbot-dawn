@@ -197,6 +197,26 @@
     "multicolumn_GxnrTY": {
       "type": "multicolumn",
       "blocks": {
+        "column_QKEbTH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/e19a6bbd3c5648f19cebfab2a7e679f5.png",
+            "title": "M2",
+            "text": "<p>• Retail & office use<br/>• Multi-color transfer<br/>• 2-inch desktop printer</p>",
+            "link_label": "",
+            "link": "shopify://products/niimbot-m2-thermal-transfer-label-printer"
+          }
+        },
+        "column_gaTqLx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/B1.png",
+            "title": "B1",
+            "text": "<p>• Wide device compatibility<br/>• Inkless thermal printing<br/>• Rich app customization functions</p>",
+            "link_label": "",
+            "link": "shopify://products/niimbot-b1-thermal-label-printer-muiticolour"
+          }
+        },
         "column_BPgB47": {
           "type": "column",
           "settings": {
@@ -209,6 +229,7 @@
         },
         "column_npJ7cY": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/lQLPJx_Pdrg8kG3NBADNBACwX2ivBYByjyIJgiGHe55YAA_1024_1024.png",
             "title": "B21",
@@ -226,23 +247,14 @@
             "link_label": "",
             "link": "shopify://products/niimbot-d110-thermal-label-printer"
           }
-        },
-        "column_QKEbTH": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/e19a6bbd3c5648f19cebfab2a7e679f5.png",
-            "title": "M2",
-            "text": "<p>• 2-inch desktop printer<br/>• Multi-color transfer<br/>• Retail & office use</p>",
-            "link_label": "",
-            "link": "shopify://products/niimbot-m2-thermal-transfer-label-printer"
-          }
         }
       },
       "block_order": [
+        "column_QKEbTH",
+        "column_gaTqLx",
         "column_BPgB47",
         "column_npJ7cY",
-        "column_3ffBUd",
-        "column_QKEbTH"
+        "column_3ffBUd"
       ],
       "custom_css": [
         ".multicolumn-card {background: #fff; border-radius: 10px;}",
