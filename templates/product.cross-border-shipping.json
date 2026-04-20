@@ -41,6 +41,13 @@
             "swatch_shape": "circle"
           }
         },
+        "text_7EK6ae": {
+          "type": "text",
+          "settings": {
+            "text": "⚠️ International Shipping NoticeThis item is shipped from our overseas warehouse.Estimated delivery to Australia & New Zealand: 10-14 business days",
+            "text_style": "body"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {}
@@ -94,6 +101,7 @@
         "inventory_Yh4bib",
         "price",
         "variant_picker",
+        "text_7EK6ae",
         "quantity_selector",
         "buy_buttons",
         "popup_txG4dj",
