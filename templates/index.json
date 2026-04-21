@@ -12,7 +12,45 @@
     "slideshow_WrahjT": {
       "type": "slideshow",
       "blocks": {
+        "slide_RjCiNU": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/custom_banner_desktop.jpg",
+            "image_mobile": "shopify://shop_images/M2_moible.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://products/custom-labels-choose-your-own-style-1",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
         "slide_iVQKeW": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/M2_desktop.jpg",
+            "image_mobile": "shopify://shop_images/custom_banner_mobile.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://products/niimbot-m2-thermal-transfer-label-printer",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_xkHDQJ": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/banner_1d276617-7575-4b48-8b6a-f25260831ea0.jpg",
@@ -50,25 +88,6 @@
             "color_scheme": ""
           }
         },
-        "slide_RjCiNU": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/bb5f2b4174b9a598cc38ffc9bfa17c42.jpg",
-            "image_mobile": "shopify://shop_images/banner1_ce06d3b8-b29d-43f4-afb1-68511a7d56c2.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://collections/local-warehouse-label-paper",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
         "slide_qfpAn8": {
           "type": "slide",
           "settings": {
@@ -90,9 +109,10 @@
         }
       },
       "block_order": [
-        "slide_iVQKeW",
-        "slide_PHQ6hU",
         "slide_RjCiNU",
+        "slide_iVQKeW",
+        "slide_xkHDQJ",
+        "slide_PHQ6hU",
         "slide_qfpAn8"
       ],
       "custom_css": [
