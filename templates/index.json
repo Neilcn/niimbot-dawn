@@ -280,7 +280,8 @@
         ".multicolumn-card {background: #fff; border-radius: 10px;}",
         ".multicolumn-list h3 {line-height: normal;}",
         ".rte p,.link {font-size: 14px;}",
-        ".link {padding-top: 20px;}"
+        ".link {padding-top: 20px;}",
+        ".slider-buttons {display:none;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
