@@ -217,6 +217,47 @@
     "multicolumn_GxnrTY": {
       "type": "multicolumn",
       "blocks": {
+        "column_npJ7cY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/61KHrOzWM-L._AC_SL1491.jpg",
+            "title": "D11H",
+            "text": "<p>•300dpi High-Definition Thermal <br/>•Efficient Paper-Saving Design</p><p>•CUltra-Portable Bluetooth Connectivity<br/></p>",
+            "link_label": "",
+            "link": "shopify://products/niimbot-d11_h-protable-wireless-connection-label-printer"
+          }
+        },
+        "column_gaTqLx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/8692820baefa41c9ab55214ab0580e77.png",
+            "title": "B1",
+            "text": "<p>• Wide device compatibility<br/>• Inkless thermal printing<br/>• Rich app customization functions</p>",
+            "link_label": "",
+            "link": "shopify://products/niimbot-b1-thermal-label-printer-muiticolour"
+          }
+        },
+        "column_BPgB47": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/niimbot-B21-thermal-printer-for-stickers-black_4a107118-9531-464c-b4ca-c5bea76a3597.jpg",
+            "title": "B21 Pro",
+            "text": "<p>• Red & black labels<br/>• 300 DPI high printing<br/>• Photo-paper compatible</p>",
+            "link_label": "",
+            "link": "shopify://products/niimbot-b21-pro-300dpi-hd-2-inch-bluetooth-label-printer-red-black-text-options"
+          }
+        },
+        "column_3ffBUd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/61S4E7ff38L._AC_SL1500.jpg",
+            "title": "D110",
+            "text": "<p>•Pocket-size<br/>•Ink-free printing<br/>•Bluetooth app editing</p>",
+            "link_label": "",
+            "link": "shopify://products/niimbot-d110-thermal-label-printer"
+          }
+        },
         "column_QKEbTH": {
           "type": "column",
           "settings": {
@@ -226,55 +267,14 @@
             "link_label": "",
             "link": "shopify://products/niimbot-m2-thermal-transfer-label-printer"
           }
-        },
-        "column_gaTqLx": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/B1.png",
-            "title": "B1",
-            "text": "<p>• Wide device compatibility<br/>• Inkless thermal printing<br/>• Rich app customization functions</p>",
-            "link_label": "",
-            "link": "shopify://products/niimbot-b1-thermal-label-printer-muiticolour"
-          }
-        },
-        "column_BPgB47": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/niimbot-B21-thermal-printer-for-stickers-black_4a107118-9531-464c-b4ca-c5bea76a3597.jpg",
-            "title": "B21 Pro",
-            "text": "<p>• Red & black labels<br/>• 300 DPI high printing<br/>• Photo-paper compatible</p>",
-            "link_label": "",
-            "link": "shopify://products/niimbot-b21-pro-300dpi-hd-2-inch-bluetooth-label-printer-red-black-text-options"
-          }
-        },
-        "column_npJ7cY": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/lQLPJx_Pdrg8kG3NBADNBACwX2ivBYByjyIJgiGHe55YAA_1024_1024.png",
-            "title": "B21",
-            "text": "<p>•Thermal printing<br/>•Compact &portable<br/>•Bluetooth app editing</p>",
-            "link_label": "",
-            "link": "shopify://products/niimbot-b21-thermal-label-printer-1"
-          }
-        },
-        "column_3ffBUd": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/d110-wh__1.jpg",
-            "title": "D110",
-            "text": "<p>•Pocket-size<br/>•Ink-free printing<br/>•Bluetooth app editing</p>",
-            "link_label": "",
-            "link": "shopify://products/niimbot-d110-thermal-label-printer"
-          }
         }
       },
       "block_order": [
-        "column_QKEbTH",
+        "column_npJ7cY",
         "column_gaTqLx",
         "column_BPgB47",
-        "column_npJ7cY",
-        "column_3ffBUd"
+        "column_3ffBUd",
+        "column_QKEbTH"
       ],
       "custom_css": [
         ".multicolumn-card {background: #fff; border-radius: 10px;}",
