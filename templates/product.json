@@ -128,11 +128,12 @@
     "related-products": {
       "type": "related-products",
       "custom_css": [
-        ".slider-button {position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; background: #fa4b46; border-radius: 50%; box-shadow: 0px 6px 14px -4px rgba(0, 0, 0, 0.14); opacity: 80%;}",
+        ".slider-button {position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; background: #fa4b46ab; border-radius: 50%; box-shadow: 0px 6px 14px -4px rgba(0, 0, 0, 0.14); opacity: 0;}",
         ".slider-button:hover {background: #fa4b46; opacity: 1;}",
         ".slider-button--next {right: 10px;}",
         ".slider-button--prev {left: 10px;}",
-        ".slider-counter.caption {display: none;}"
+        ".slider-counter.caption {display: none;}",
+        "product-recommendations:hover .slider-button {opacity: 1;}"
       ],
       "settings": {
         "heading": "RELATED PRODUCTS",
