@@ -305,14 +305,15 @@ a.product__text {
 .sticky-atc__title {
   margin: 0;
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.3;
 }
 
 .sticky-atc__price {
   margin: 0.4rem 0 0;
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 400;
+  color:#e95144;
 }
 
 .sticky-atc__form,
@@ -327,21 +328,40 @@ a.product__text {
   align-items: center;
 }
 
+.sticky-atc__variant-select-wrap {
+  position: relative;
+  width: 100%;
+}
+
 .sticky-atc__variant-select {
   width: 100%;
   min-height: 4.4rem;
-  border-radius: 0.4rem;
+  border-radius: 2.2rem;
   border: 0.1rem solid rgba(var(--color-foreground), 0.2);
-  padding: 0 1rem;
+  padding: 0 3.2rem 0 1rem;
   font-size: 1.4rem;
   background: rgb(var(--color-background));
+  color: rgb(var(--color-foreground));
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+.sticky-atc__variant-select-wrap .svg-wrapper {
+  height: 0.6rem;
+  width: 1rem;
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - 0.2rem);
+  right: 1.2rem;
 }
 
 .sticky-atc__quantity {
   display: flex;
   align-items: center;
   border: 0.1rem solid rgba(var(--color-foreground), 0.2);
-  border-radius: 0.4rem;
+  border-radius: 2.2rem;
   overflow: hidden;
   height: 4.4rem;
 }
@@ -354,6 +374,7 @@ a.product__text {
   cursor: pointer;
   font-size: 2rem;
   line-height: 1;
+  font-weight: 100;
 }
 
 .sticky-atc__qty-input {
@@ -374,8 +395,9 @@ a.product__text {
   appearance: textfield;
 }
 
-.sticky-atc__submit {
+.sticky-atc__submit.product-form__submit {
   min-height: 4.4rem;
+  margin-bottom: 0;
 }
 
 .sticky-atc .loading__spinner {

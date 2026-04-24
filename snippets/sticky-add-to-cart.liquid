@@ -66,36 +66,47 @@
             <input type="hidden" name="id" value="{{ sticky_variant.id }}" class="product-variant-id">
           {%- else -%}
             <label class="visually-hidden" for="StickyVariant-{{ section.id }}">Variant</label>
-            <select id="StickyVariant-{{ section.id }}" name="id" class="sticky-atc__variant-select">
-              {%- for variant in product.variants -%}
-                <option
-                  value="{{ variant.id }}"
-                  data-price="{{ variant.price | money }}"
-                  data-available="{{ variant.available }}"
-                  {% if variant.featured_media %}
-                    data-image="{{ variant.featured_media.preview_image | image_url: width: 120 }}"
-                  {% endif %}
-                  {% if variant.id == sticky_variant.id %}
-                    selected="selected"
-                  {% endif %}
-                >
-                  {{ variant.title | escape }}{% unless variant.available %} - {{ 'products.product.sold_out' | t }}{% endunless %}
-                </option>
-              {%- endfor -%}
-            </select>
+            <div class="sticky-atc__variant-select-wrap">
+              <select id="StickyVariant-{{ section.id }}" name="id" class="sticky-atc__variant-select">
+                {%- for variant in product.variants -%}
+                  <option
+                    value="{{ variant.id }}"
+                    data-price="{{ variant.price | money }}"
+                    data-available="{{ variant.available }}"
+                    {% if variant.featured_media %}
+                      data-image="{{ variant.featured_media.preview_image | image_url: width: 120 }}"
+                    {% endif %}
+                    {% if variant.id == sticky_variant.id %}
+                      selected="selected"
+                    {% endif %}
+                  >
+                    {{ variant.title | escape }}{% unless variant.available %} - {{ 'products.product.sold_out' | t }}{% endunless %}
+                  </option>
+                {%- endfor -%}
+              </select>
+              <span class="svg-wrapper">
+                {{- 'icon-caret.svg' | inline_asset_content -}}
+              </span>
+            </div>
           {%- endif -%}
 
           <div class="sticky-atc__quantity" role="group" aria-label="{{ 'products.product.quantity.label' | t }}">
-            <button type="button" class="sticky-atc__qty-button" data-quantity-change="decrease" aria-label="Decrease quantity">-</button>
+            <button type="button" class="sticky-atc__qty-button quantity__button" name="minus" data-quantity-change="decrease" aria-label="Decrease quantity">
+              <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+              <span class="svg-wrapper">{{ 'icon-minus.svg' | inline_asset_content }}</span>
+            </button>
             <input
-              class="sticky-atc__qty-input"
+              class="sticky-atc__qty-input quantity__input"
               type="number"
               name="quantity"
               min="1"
               value="1"
               inputmode="numeric"
             >
-            <button type="button" class="sticky-atc__qty-button" data-quantity-change="increase" aria-label="Increase quantity">+</button>
+            <button type="button" class="sticky-atc__qty-button quantity__button" name="plus" data-quantity-change="increase" aria-label="Increase quantity">
+              <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+              <span class="svg-wrapper">{{ 'icon-plus.svg' | inline_asset_content }}</span>
+            </button>
           </div>
 
           <button
