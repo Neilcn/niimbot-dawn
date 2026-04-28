@@ -44,14 +44,14 @@
         "text_7EK6ae": {
           "type": "text",
           "settings": {
-            "text": "⚠️ International Shipping Notice",
+            "text": "⚠️ Delivery Notice",
             "text_style": "body"
           }
         },
         "text_n3Wnwa": {
           "type": "text",
           "settings": {
-            "text": "This item is shipped from our overseas warehouse.Estimated delivery to Australia & New Zealand: 10-14 business days",
+            "text": "This item is shipped from our separate warehouse.Estimated delivery to Australia & New Zealand: 10-14 business days",
             "text_style": "body"
           }
         },
