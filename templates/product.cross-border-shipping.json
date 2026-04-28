@@ -151,7 +151,7 @@
         ".slider-counter.caption {display: none;}"
       ],
       "settings": {
-        "heading": "RELATED PRODUCTS",
+        "heading": "RELATED SCENARIO PRODUCTS",
         "heading_size": "h2",
         "products_to_show": 10,
         "columns_desktop": 4,
