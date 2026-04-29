@@ -62,7 +62,7 @@
         "complementary_w6HDAz": {
           "type": "complementary",
           "settings": {
-            "block_heading": "Frequently Bought Together",
+            "block_heading": "Matched Products",
             "make_collapsible_row": false,
             "icon": "price_tag",
             "product_list_limit": 10,
