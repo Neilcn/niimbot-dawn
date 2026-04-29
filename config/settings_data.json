@@ -171,7 +171,7 @@
         "type": "shopify://apps/yuko-order-limits/blocks/order-limit-embed/52f9f134-3e39-4eea-b253-74233a4918d4",
         "disabled": false,
         "settings": {
-          "custom_javascript": "function hideCollectionMessages() {\n  if (window.location.pathname.includes(\"/collections/\")) {\n    document.querySelectorAll(\".yuko-featured-limit-msg\").forEach(el => {\n      el.style.display = \"none\";\n    });\n  }\n}\n\n// Run initially\ndocument.addEventListener(\"DOMContentLoaded\", hideCollectionMessages);\n\n// Run again if DOM changes (Shopify dynamic loads)\nconst observer = new MutationObserver(hideCollectionMessages);\nobserver.observe(document.body, { childList: true, subtree: true });"
+          "custom_javascript": "function hideCollectionMessages() {\n  if (window.location.pathname.includes(\"/collections/\")) {\n    document.querySelectorAll(\".yuko-featured-limit-msg\").forEach(el => {\n      el.style.display = \"none\";\n    });\n  }\n}\n\ndocument.addEventListener(\"DOMContentLoaded\", hideCollectionMessages);\n\nconst observer = new MutationObserver(hideCollectionMessages);\nobserver.observe(document.body, { childList: true, subtree: true });"
         }
       }
     },
