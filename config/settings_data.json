@@ -173,6 +173,11 @@
         "settings": {
           "custom_javascript": "function hideCollectionMessages() {\n  if (window.location.pathname.includes(\"/collections/\")) {\n    document.querySelectorAll(\".yuko-featured-limit-msg\").forEach(el => {\n      el.style.display = \"none\";\n    });\n  }\n}\n\ndocument.addEventListener(\"DOMContentLoaded\", hideCollectionMessages);\n\nconst observer = new MutationObserver(hideCollectionMessages);\nobserver.observe(document.body, { childList: true, subtree: true });"
         }
+      },
+      "9696655121035291526": {
+        "type": "shopify://apps/rapi/blocks/app-embed/99617c17-a32b-4e70-a883-7a155610d032",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
