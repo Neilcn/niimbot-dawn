@@ -178,6 +178,18 @@
         "type": "shopify://apps/rapi/blocks/app-embed/99617c17-a32b-4e70-a883-7a155610d032",
         "disabled": false,
         "settings": {}
+      },
+      "124348908681409149": {
+        "type": "shopify://apps/simple-bundles-kits/blocks/simple-bundles-v2/e553276b-36b2-446d-b80a-aa47fe5f96ac",
+        "disabled": false,
+        "settings": {
+          "select_placeholder": "Please select an option",
+          "disable_oos_options": true,
+          "show_price_variance": true,
+          "rank_options_by_price_diff": true,
+          "custom_css": "",
+          "custom_js": ""
+        }
       }
     },
     "color_schemes": {
