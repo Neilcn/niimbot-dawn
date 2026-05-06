@@ -851,6 +851,9 @@ a.active-facets__button.focused .active-facets__button-inner {
 
 .mobile-facets__open-label {
   transition: text-decoration var(--duration-short) ease;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .mobile-facets__open:hover .mobile-facets__open-label {
