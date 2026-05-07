@@ -16,6 +16,7 @@
       "blocks": {
         "announcement_XxcxHU": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "🚚 AU local: ship as usual | Other warehouse: ship May 6",
             "link": ""
