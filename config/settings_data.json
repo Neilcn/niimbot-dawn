@@ -174,11 +174,6 @@
           "custom_javascript": "function hideCollectionMessages() {\n  if (window.location.pathname.includes(\"/collections/\")) {\n    document.querySelectorAll(\".yuko-featured-limit-msg\").forEach(el => {\n      el.style.display = \"none\";\n    });\n  }\n}\n\ndocument.addEventListener(\"DOMContentLoaded\", hideCollectionMessages);\n\nconst observer = new MutationObserver(hideCollectionMessages);\nobserver.observe(document.body, { childList: true, subtree: true });"
         }
       },
-      "9696655121035291526": {
-        "type": "shopify://apps/rapi/blocks/app-embed/99617c17-a32b-4e70-a883-7a155610d032",
-        "disabled": false,
-        "settings": {}
-      },
       "124348908681409149": {
         "type": "shopify://apps/simple-bundles-kits/blocks/simple-bundles-v2/e553276b-36b2-446d-b80a-aa47fe5f96ac",
         "disabled": false,
@@ -191,9 +186,9 @@
           "custom_js": ""
         }
       },
-      "10689718029141873684": {
-        "type": "shopify://apps/push-bundle-build-a-box/blocks/push_bundle_global_embeded_block/c7a2f99b-c12d-4b20-818f-c41b35b2a415",
-        "disabled": false,
+      "9696655121035291526": {
+        "type": "shopify://apps/rapi/blocks/app-embed/99617c17-a32b-4e70-a883-7a155610d032",
+        "disabled": true,
         "settings": {}
       }
     },
