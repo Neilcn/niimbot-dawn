@@ -190,6 +190,11 @@
           "custom_css": "",
           "custom_js": ""
         }
+      },
+      "10689718029141873684": {
+        "type": "shopify://apps/push-bundle-build-a-box/blocks/push_bundle_global_embeded_block/c7a2f99b-c12d-4b20-818f-c41b35b2a415",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
