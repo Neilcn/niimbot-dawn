@@ -298,6 +298,15 @@ quick-add-modal .product__column-sticky .product__media-list {
   margin-bottom: 0;
 }
 
+quick-add-modal .product__title h2 {
+  overflow: hidden;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+
 quick-add-modal .product__media-list .deferred-media {
   display: block;
   width: 100%;

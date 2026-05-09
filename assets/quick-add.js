@@ -68,6 +68,9 @@ if (!customElements.get('quick-add-modal')) {
         const pickupAvailability = productElement.querySelector('pickup-availability');
         if (pickupAvailability) pickupAvailability.remove();
 
+        const stickyAddToCart = productElement.querySelector('sticky-add-to-cart');
+        if (stickyAddToCart) stickyAddToCart.remove();
+
         const productModal = productElement.querySelector('product-modal');
         if (productModal) productModal.remove();
 
