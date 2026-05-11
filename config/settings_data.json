@@ -207,6 +207,11 @@
           "button_text_color": "#000000",
           "active_button_text_color": "#ffffff"
         }
+      },
+      "10042746950867549768": {
+        "type": "shopify://apps/hulk-product-options/blocks/app-embed/380168ef-9475-4244-a291-f66b189208b5",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
