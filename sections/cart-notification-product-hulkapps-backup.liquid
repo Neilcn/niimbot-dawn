@@ -1,6 +1,6 @@
 {%- if cart != empty -%}
   {%- for item in cart.items -%}
-    <div  data-hulkapps-lineitem id="cart-notification-product-{{ item.key }}" class="cart-item">
+    <div id="cart-notification-product-{{ item.key }}" class="cart-item">
       {%- if item.image -%}
         <div class="cart-notification-product__image global-media-settings">
           <img
@@ -26,7 +26,6 @@
               </div>
             {%- endfor -%}
           {%- endunless -%}
-<span data-hulkapps-line-properties>
           {%- for property in item.properties -%}
             {%- assign property_first_char = property.first | slice: 0 -%}
             {%- if property.last != blank and property_first_char != '_' -%}
@@ -44,8 +43,6 @@
               </div>
             {%- endif -%}
           {%- endfor -%}
-</span>
-<button type='button' style='display: none;' class='edit_cart_option btn btn--primary button' data-product_id='{{item.product_id}}' data-key='{{item.key}}' data-variant_id='{{item.variant_id}}' data-quantity='{{item.quantity}}'>Edit Options</button>
         </dl>
         {%- if item.selling_plan_allocation != null -%}
           <p class="product-option">{{ item.selling_plan_allocation.selling_plan.name }}</p>
