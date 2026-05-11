@@ -108,8 +108,8 @@
                         <p class="caption-with-letter-spacing">{{ item.product.vendor }}</p>
                       {%- endif -%}
 
-                      {% if product.selected_or_first_available_variant.sku %}
-                        <p class="caption-with-letter-spacing">{{ product.selected_or_first_available_variant.sku }}</p>
+                      {% if item.selected_or_first_available_variant.sku %}
+                        <p class="caption-with-letter-spacing">{{ item.selected_or_first_available_variant.sku }}</p>
                       {% endif %}
 
                       <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
