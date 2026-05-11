@@ -208,14 +208,14 @@
           "active_button_text_color": "#ffffff"
         }
       },
-      "10042746950867549768": {
-        "type": "shopify://apps/hulk-product-options/blocks/app-embed/380168ef-9475-4244-a291-f66b189208b5",
-        "disabled": false,
-        "settings": {}
-      },
       "3720565183479497137": {
         "type": "shopify://apps/globo-product-options/blocks/app-embed-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
         "disabled": false,
+        "settings": {}
+      },
+      "10042746950867549768": {
+        "type": "shopify://apps/hulk-product-options/blocks/app-embed/380168ef-9475-4244-a291-f66b189208b5",
+        "disabled": true,
         "settings": {}
       }
     },
