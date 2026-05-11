@@ -191,16 +191,21 @@
         "disabled": true,
         "settings": {}
       },
-      "9685009021672784835": {
-        "type": "shopify://apps/g-combined-listings/blocks/swatch_renderer/b3e63011-8382-4b7f-8929-7fe2b1aec125",
+      "11806986262689291318": {
+        "type": "shopify://apps/gie-product-variant-options/blocks/color-swatch-embed/ea1dea64-e872-480d-9514-8d9dcc32dc4a",
         "disabled": false,
         "settings": {
-          "enable_swatch_product_page": false,
-          "enable_swatch_product_card_1": false,
-          "enable_swatch_product_card_2": false,
-          "swatch_option_identifiers": "Color, Colour, Couleur, Colore, Farbe,\nPattern, Patrón, Motif, Muster, Motivo,\nMaterial, Matériau, Materiale,\nFinish, Finition, Finitura, Oberfläche, Acabado",
-          "custom_css_prod": "/* Custom CSS */",
-          "custom_css_card": "/* Custom CSS */"
+          "container_width": 100,
+          "image_ratio": "rectangle",
+          "image_fit": "contain",
+          "image_swatch_size": "small",
+          "swatches_items_radius": 0,
+          "color_dots_border_radius": 0,
+          "swatches_position": "left",
+          "button_bg_color": "#ffffff",
+          "actve_button_bg_color": "#000000",
+          "button_text_color": "#000000",
+          "active_button_text_color": "#ffffff"
         }
       }
     },
