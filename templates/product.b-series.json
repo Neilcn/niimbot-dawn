@@ -43,6 +43,7 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
+          "disabled": true,
           "settings": {}
         },
         "yuko_order_limits_order_limit_product_message_tgPTUG": {
