@@ -186,37 +186,20 @@
           "custom_js": ""
         }
       },
-      "9696655121035291526": {
-        "type": "shopify://apps/rapi/blocks/app-embed/99617c17-a32b-4e70-a883-7a155610d032",
-        "disabled": true,
-        "settings": {}
-      },
-      "11806986262689291318": {
-        "type": "shopify://apps/gie-product-variant-options/blocks/color-swatch-embed/ea1dea64-e872-480d-9514-8d9dcc32dc4a",
+      "7278694835107773449": {
+        "type": "shopify://apps/bundlesuite/blocks/bundle_components/ec3fca7a-00ff-426d-ac7c-5f640fb4c8a4",
         "disabled": false,
         "settings": {
-          "container_width": 100,
-          "image_ratio": "rectangle",
-          "image_fit": "contain",
-          "image_swatch_size": "small",
-          "swatches_items_radius": 0,
-          "color_dots_border_radius": 0,
-          "swatches_position": "left",
-          "button_bg_color": "#ffffff",
-          "actve_button_bg_color": "#000000",
-          "button_text_color": "#000000",
-          "active_button_text_color": "#ffffff"
+          "custom_section_class": "",
+          "custom_section_class_for_InPage": "",
+          "volume_discount_widget_selector": "",
+          "what_happens_on_add_to_cart": "redirect_to_cart",
+          "custom_loader_gif": "",
+          "show_loader": false,
+          "loader_size": 50,
+          "customcss": "",
+          "customjs": ""
         }
-      },
-      "3720565183479497137": {
-        "type": "shopify://apps/globo-product-options/blocks/app-embed-block/fdc9fad5-1a0f-4bd4-9c8a-1af6a6eef6b8",
-        "disabled": false,
-        "settings": {}
-      },
-      "10042746950867549768": {
-        "type": "shopify://apps/hulk-product-options/blocks/app-embed/380168ef-9475-4244-a291-f66b189208b5",
-        "disabled": true,
-        "settings": {}
       }
     },
     "color_schemes": {
