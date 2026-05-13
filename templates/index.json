@@ -53,8 +53,8 @@
         "slide_iVQKeW": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/M2_desktop.jpg",
-            "image_mobile": "shopify://shop_images/custom_banner_mobile.jpg",
+            "image": "shopify://shop_images/M2_Banner.png",
+            "image_mobile": "shopify://shop_images/M2_Banner_mobile.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
