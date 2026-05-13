@@ -16,6 +16,7 @@
       "blocks": {
         "link_list_yUyLRM": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "heading": "QUICK MENU",
             "menu": "main-menu"
