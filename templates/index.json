@@ -31,6 +31,25 @@
             "color_scheme": ""
           }
         },
+        "slide_ttYp4p": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_2026_5_13_17_40_44.png",
+            "image_mobile": "shopify://shop_images/ChatGPT_Image_2026_5_13_17_41_59.png",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "https://niimbot.goaffpro.com/",
+            "button_style_secondary": false,
+            "show_text_box": true,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
         "slide_iVQKeW": {
           "type": "slide",
           "settings": {
@@ -42,25 +61,6 @@
             "subheading": "",
             "button_label": "",
             "link": "shopify://products/niimbot-m2-thermal-transfer-label-printer",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
-          }
-        },
-        "slide_xkHDQJ": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/banner_1d276617-7575-4b48-8b6a-f25260831ea0.jpg",
-            "image_mobile": "shopify://shop_images/banner_dfc91a77-1ca4-4e7c-88db-8655b4b99df1.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://collections/label-printer",
             "button_style_secondary": false,
             "show_text_box": false,
             "box_align": "middle-center",
@@ -111,8 +111,8 @@
       },
       "block_order": [
         "slide_RjCiNU",
+        "slide_ttYp4p",
         "slide_iVQKeW",
-        "slide_xkHDQJ",
         "slide_PHQ6hU",
         "slide_qfpAn8"
       ],
