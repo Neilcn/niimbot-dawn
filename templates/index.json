@@ -470,6 +470,7 @@
         "column_487n8K",
         "column_FM7DeN"
       ],
+      "disabled": true,
       "custom_css": [
         ".slider-button--next {right: 20px;}",
         ".slider-button--prev {left: 20px;}",
