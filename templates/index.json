@@ -217,14 +217,24 @@
     "multicolumn_GxnrTY": {
       "type": "multicolumn",
       "blocks": {
-        "column_npJ7cY": {
+        "column_QKEbTH": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/61KHrOzWM-L._AC_SL1491.jpg",
-            "title": "D11H",
-            "text": "<p>•300dpi High-Definition Thermal <br/>•Efficient Paper-Saving Design</p><p>•CUltra-Portable Bluetooth Connectivity<br/></p>",
+            "image": "shopify://shop_images/e19a6bbd3c5648f19cebfab2a7e679f5.png",
+            "title": "M2",
+            "text": "<p>• Retail & office use<br/>• Multi-color transfer<br/>• 2-inch desktop printer</p>",
             "link_label": "",
-            "link": "shopify://products/niimbot-d11_h-protable-wireless-connection-label-printer"
+            "link": "shopify://products/niimbot-m2-thermal-transfer-label-printer"
+          }
+        },
+        "column_BPgB47": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/niimbot-B21-thermal-printer-for-stickers-black_4a107118-9531-464c-b4ca-c5bea76a3597.jpg",
+            "title": "B21 Pro",
+            "text": "<p>• Red & black labels<br/>• 300 DPI high printing<br/>• Photo-paper compatible</p>",
+            "link_label": "",
+            "link": "shopify://products/niimbot-b21-pro-300dpi-hd-2-inch-bluetooth-label-printer-red-black-text-options"
           }
         },
         "column_gaTqLx": {
@@ -237,19 +247,19 @@
             "link": "shopify://products/niimbot-b1-thermal-label-printer-muiticolour"
           }
         },
-        "column_BPgB47": {
+        "column_npJ7cY": {
           "type": "column",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/niimbot-B21-thermal-printer-for-stickers-black_4a107118-9531-464c-b4ca-c5bea76a3597.jpg",
-            "title": "B21 Pro",
-            "text": "<p>• Red & black labels<br/>• 300 DPI high printing<br/>• Photo-paper compatible</p>",
+            "image": "shopify://shop_images/m3-1.jpg",
+            "title": "M3",
+            "text": "<p>• 3-inch wide format printing<br/>• Multi-color ribbon compatible<br/>• Bluetooth connectivity for versatile use</p>",
             "link_label": "",
-            "link": "shopify://products/niimbot-b21-pro-300dpi-hd-2-inch-bluetooth-label-printer-red-black-text-options"
+            "link": "shopify://products/niimbot-m3-3inch-bluetooth-thermal-transfer-label-printer-multi-color-ribbon-compatible-for-small-business-clothing-address-cable-storage"
           }
         },
         "column_3ffBUd": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/61S4E7ff38L._AC_SL1500.jpg",
             "title": "D110",
@@ -257,31 +267,21 @@
             "link_label": "",
             "link": "shopify://products/niimbot-d110-thermal-label-printer"
           }
-        },
-        "column_QKEbTH": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/e19a6bbd3c5648f19cebfab2a7e679f5.png",
-            "title": "M2",
-            "text": "<p>• Retail & office use<br/>• Multi-color transfer<br/>• 2-inch desktop printer</p>",
-            "link_label": "",
-            "link": "shopify://products/niimbot-m2-thermal-transfer-label-printer"
-          }
         }
       },
       "block_order": [
-        "column_npJ7cY",
-        "column_gaTqLx",
+        "column_QKEbTH",
         "column_BPgB47",
-        "column_3ffBUd",
-        "column_QKEbTH"
+        "column_gaTqLx",
+        "column_npJ7cY",
+        "column_3ffBUd"
       ],
       "custom_css": [
         ".multicolumn-card {background: #fff; border-radius: 10px;}",
         ".multicolumn-list h3 {line-height: normal;}",
         ".rte p,.link {font-size: 14px;}",
         ".link {padding-top: 20px;}",
-        ".slider-buttons {display:none;}"
+        ".slider-buttons {display: none;}"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
@@ -301,6 +301,101 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "link_overlay": true
+      }
+    },
+    "custom_multicolumn_ggnfqM": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "column_ycTb6b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/For_Kitchen_2.0.jpg",
+            "title": "Kitchen Labeling",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/restaurant-kitchen-use"
+          }
+        },
+        "column_nJhFmC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/For_Candle_Oils_2.0.jpg",
+            "title": "Fragrance Labeling",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/m2-essential-oils-lab"
+          }
+        },
+        "column_hydU6R": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/For_Lab_2.0.jpg",
+            "title": "Lab Labeling",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/for-laboratory"
+          }
+        },
+        "column_CKgBQh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/For_Supermarket_Retail_2.0.jpg",
+            "title": "Retail Labeling",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/for-supermarket-retail"
+          }
+        },
+        "column_EkHrAc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/for_students2.0.jpg",
+            "title": "Students Labeling",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/for-students"
+          }
+        },
+        "column_xXfkky": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/For_Electrician_2.0.jpg",
+            "title": "Electrician Labeling",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://collections/for-electrician"
+          }
+        }
+      },
+      "block_order": [
+        "column_ycTb6b",
+        "column_nJhFmC",
+        "column_hydU6R",
+        "column_CKgBQh",
+        "column_EkHrAc",
+        "column_xXfkky"
+      ],
+      "name": "Custom multicolumn",
+      "settings": {
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "pagination_style": "counter",
+        "layout": "row",
+        "title": "LABELING SOLUTIONS",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "link_overlay": false
       }
     },
     "multicolumn_4qmgQQ": {
@@ -472,10 +567,10 @@
         "accessibility_info": ""
       }
     },
-    "custom_multicolumn_ggnfqM": {
+    "custom_multicolumn_P9RKTA": {
       "type": "custom-multicolumn",
       "blocks": {
-        "column_ycTb6b": {
+        "column_deM4ii": {
           "type": "column",
           "settings": {
             "title": "Column",
@@ -484,7 +579,7 @@
             "link": ""
           }
         },
-        "column_nJhFmC": {
+        "column_NWHBPM": {
           "type": "column",
           "settings": {
             "title": "Column",
@@ -493,46 +588,10 @@
             "link": ""
           }
         },
-        "column_hydU6R": {
+        "column_y7H4MN": {
           "type": "column",
           "settings": {
             "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_CKgBQh": {
-          "type": "column",
-          "settings": {
-            "title": "Column1",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_EkHrAc": {
-          "type": "column",
-          "settings": {
-            "title": "Column2",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_xXfkky": {
-          "type": "column",
-          "settings": {
-            "title": "Column3",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_rfQrej": {
-          "type": "column",
-          "settings": {
-            "title": "Column4",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
             "link": ""
@@ -540,28 +599,24 @@
         }
       },
       "block_order": [
-        "column_ycTb6b",
-        "column_nJhFmC",
-        "column_hydU6R",
-        "column_CKgBQh",
-        "column_EkHrAc",
-        "column_xXfkky",
-        "column_rfQrej"
+        "column_deM4ii",
+        "column_NWHBPM",
+        "column_y7H4MN"
       ],
       "disabled": true,
       "name": "Custom multicolumn",
       "settings": {
-        "auto_rotate": true,
-        "change_slides_speed": 3,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
         "pagination_style": "counter",
         "layout": "row",
         "title": "Multicolumn",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "button_label": "",
+        "button_label": "Button label",
         "button_link": "",
-        "columns_desktop": 6,
+        "columns_desktop": 3,
         "column_alignment": "left",
         "background_style": "primary",
         "color_scheme": "",
@@ -577,10 +632,11 @@
     "slideshow_WrahjT",
     "multicolumn_aiMXwV",
     "multicolumn_GxnrTY",
+    "custom_multicolumn_ggnfqM",
     "multicolumn_4qmgQQ",
     "177491975492746bf6",
     "video_CWXcFm",
     "slideshow_RfiX63",
-    "custom_multicolumn_ggnfqM"
+    "custom_multicolumn_P9RKTA"
   ]
 }
