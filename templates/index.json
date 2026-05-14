@@ -138,58 +138,6 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "custom_multicolumn_UF9WXU": {
-      "type": "custom-multicolumn",
-      "blocks": {
-        "column_Ft8rjK": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_2026_5_14_14_49_53.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "shopify://products/custom-labels-choose-your-own-style-1"
-          }
-        },
-        "column_yqUtMh": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_2026_5_13_17_40_44_b04378eb-1d6f-40bd-b5bf-af8ea9532f15.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "https://niimbot.goaffpro.com/"
-          }
-        }
-      },
-      "block_order": [
-        "column_Ft8rjK",
-        "column_yqUtMh"
-      ],
-      "disabled": true,
-      "name": "Custom multicolumn",
-      "settings": {
-        "auto_rotate": true,
-        "change_slides_speed": 3,
-        "pagination_style": "counter",
-        "layout": "row",
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "link_overlay": false
-      }
-    },
     "multicolumn_6iiz78": {
       "type": "multicolumn",
       "blocks": {
@@ -243,58 +191,6 @@
         "padding_top": 16,
         "padding_bottom": 36,
         "link_overlay": true
-      }
-    },
-    "custom_multicolumn_P9RKTA": {
-      "type": "custom-multicolumn",
-      "blocks": {
-        "column_deM4ii": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_2026_5_14_14_49_53.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "shopify://products/custom-labels-choose-your-own-style-1"
-          }
-        },
-        "column_NWHBPM": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_2026_5_13_17_40_44_b04378eb-1d6f-40bd-b5bf-af8ea9532f15.png",
-            "title": "",
-            "text": "",
-            "link_label": "",
-            "link": "https://niimbot.goaffpro.com/"
-          }
-        }
-      },
-      "block_order": [
-        "column_deM4ii",
-        "column_NWHBPM"
-      ],
-      "disabled": true,
-      "name": "Custom multicolumn",
-      "settings": {
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "pagination_style": "counter",
-        "layout": "row",
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "",
-        "button_link": "",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 16,
-        "padding_bottom": 36,
-        "link_overlay": false
       }
     },
     "multicolumn_aiMXwV": {
@@ -474,7 +370,7 @@
             "title": "Kitchen Labeling",
             "text": "",
             "link_label": "",
-            "link": "shopify://collections/restaurant-kitchen-use"
+            "link": "shopify://products/kitchen"
           }
         },
         "column_nJhFmC": {
@@ -484,7 +380,7 @@
             "title": "Fragrance Labeling",
             "text": "",
             "link_label": "",
-            "link": "shopify://collections/m2-essential-oils-lab"
+            "link": "shopify://products/oil-1"
           }
         },
         "column_hydU6R": {
@@ -494,7 +390,7 @@
             "title": "Lab Labeling",
             "text": "",
             "link_label": "",
-            "link": "shopify://collections/for-laboratory"
+            "link": "shopify://products/lab"
           }
         },
         "column_CKgBQh": {
@@ -504,7 +400,7 @@
             "title": "Retail Labeling",
             "text": "",
             "link_label": "",
-            "link": "shopify://collections/for-supermarket-retail"
+            "link": "shopify://products/retail"
           }
         },
         "column_EkHrAc": {
@@ -514,7 +410,7 @@
             "title": "Students Labeling",
             "text": "",
             "link_label": "",
-            "link": "shopify://collections/for-students"
+            "link": "shopify://products/student"
           }
         },
         "column_xXfkky": {
@@ -524,7 +420,7 @@
             "title": "Electrician Labeling",
             "text": "",
             "link_label": "",
-            "link": "shopify://collections/for-electrician"
+            "link": "shopify://products/electrician"
           }
         }
       },
@@ -733,9 +629,7 @@
   },
   "order": [
     "slideshow_WrahjT",
-    "custom_multicolumn_UF9WXU",
     "multicolumn_6iiz78",
-    "custom_multicolumn_P9RKTA",
     "multicolumn_aiMXwV",
     "multicolumn_GxnrTY",
     "custom_multicolumn_ggnfqM",
