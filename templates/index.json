@@ -12,6 +12,44 @@
     "slideshow_WrahjT": {
       "type": "slideshow",
       "blocks": {
+        "slide_iVQKeW": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/M2_Banner.png",
+            "image_mobile": "shopify://shop_images/M2_Banner_mobile.png",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://products/niimbot-m2-thermal-transfer-label-printer",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
+        "slide_qfpAn8": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Niimbot_B21_d.jpg",
+            "image_mobile": "shopify://shop_images/Niimbot_B21_m.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://products/niimbot-b21-thermal-label-printer-1",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
         "slide_RjCiNU": {
           "type": "slide",
           "settings": {
@@ -50,25 +88,6 @@
             "color_scheme": "scheme-1"
           }
         },
-        "slide_iVQKeW": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/M2_Banner.png",
-            "image_mobile": "shopify://shop_images/M2_Banner_mobile.png",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://products/niimbot-m2-thermal-transfer-label-printer",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
-          }
-        },
         "slide_PHQ6hU": {
           "type": "slide",
           "disabled": true,
@@ -88,33 +107,14 @@
             "text_alignment_mobile": "center",
             "color_scheme": ""
           }
-        },
-        "slide_qfpAn8": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Niimbot_B21_d.jpg",
-            "image_mobile": "shopify://shop_images/Niimbot_B21_m.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://products/niimbot-b21-thermal-label-printer-1",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
-          }
         }
       },
       "block_order": [
+        "slide_iVQKeW",
+        "slide_qfpAn8",
         "slide_RjCiNU",
         "slide_ttYp4p",
-        "slide_iVQKeW",
-        "slide_PHQ6hU",
-        "slide_qfpAn8"
+        "slide_PHQ6hU"
       ],
       "custom_css": [
         ".slideshow__controls {position: absolute; bottom: 10px; width: 100%; border: none;}",
@@ -131,7 +131,7 @@
         "slide_height": "adapt_image",
         "slider_visual": "dots",
         "auto_rotate": true,
-        "change_slides_speed": 5,
+        "change_slides_speed": 3,
         "image_behavior": "none",
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
