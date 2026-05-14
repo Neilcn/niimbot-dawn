@@ -71,6 +71,7 @@
         },
         "slide_RjCiNU": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/6f13ba47-bf55-4ab9-a33d-569827855307.png",
             "image_mobile": "shopify://shop_images/ChatGPT_Image_2026_5_13_17_24_24.png",
@@ -90,6 +91,7 @@
         },
         "slide_ttYp4p": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_2026_5_13_17_40_44.png",
             "image_mobile": "shopify://shop_images/ChatGPT_Image_2026_5_13_17_41_59.png",
@@ -136,17 +138,68 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "custom_multicolumn_UF9WXU": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "column_Ft8rjK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_2026_5_14_14_49_53.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/custom-labels-choose-your-own-style-1"
+          }
+        },
+        "column_yqUtMh": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_2026_5_13_17_40_44_b04378eb-1d6f-40bd-b5bf-af8ea9532f15.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https://niimbot.goaffpro.com/"
+          }
+        }
+      },
+      "block_order": [
+        "column_Ft8rjK",
+        "column_yqUtMh"
+      ],
+      "name": "Custom multicolumn",
+      "settings": {
+        "auto_rotate": true,
+        "change_slides_speed": 3,
+        "pagination_style": "counter",
+        "layout": "row",
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "link_overlay": false
+      }
+    },
     "custom_multicolumn_P9RKTA": {
       "type": "custom-multicolumn",
       "blocks": {
         "column_deM4ii": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/176e2c294693ddb2902f6c43d32829fa.png",
+            "image": "shopify://shop_images/ChatGPT_Image_2026_5_14_14_49_53.png",
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify://products/custom-labels-choose-your-own-style-1"
           }
         },
         "column_NWHBPM": {
@@ -156,7 +209,7 @@
             "title": "",
             "text": "",
             "link_label": "",
-            "link": ""
+            "link": "https://niimbot.goaffpro.com/"
           }
         }
       },
@@ -183,7 +236,7 @@
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 16,
         "padding_bottom": 36,
         "link_overlay": false
       }
@@ -624,6 +677,7 @@
   },
   "order": [
     "slideshow_WrahjT",
+    "custom_multicolumn_UF9WXU",
     "custom_multicolumn_P9RKTA",
     "multicolumn_aiMXwV",
     "multicolumn_GxnrTY",
