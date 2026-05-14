@@ -166,6 +166,7 @@
         "column_Ft8rjK",
         "column_yqUtMh"
       ],
+      "disabled": true,
       "name": "Custom multicolumn",
       "settings": {
         "auto_rotate": true,
@@ -187,6 +188,61 @@
         "padding_top": 36,
         "padding_bottom": 36,
         "link_overlay": false
+      }
+    },
+    "multicolumn_6iiz78": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_yaUi6L": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_2026_5_14_14_49_53.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/custom-labels-choose-your-own-style-1"
+          }
+        },
+        "column_yh4MRq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_2026_5_13_17_40_44_b04378eb-1d6f-40bd-b5bf-af8ea9532f15.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "https://niimbot.goaffpro.com/"
+          }
+        }
+      },
+      "block_order": [
+        "column_yaUi6L",
+        "column_yh4MRq"
+      ],
+      "custom_css": [
+        ".multicolumn-card {background: #fff; border-radius: 10px;}",
+        ".multicolumn-list h3 {line-height: normal;}",
+        ".rte p,.link {font-size: 14px;}",
+        ".link {padding-top: 20px;}",
+        ".slider-buttons {display: none;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "carousel_on_desktop": false,
+        "swipe_on_mobile": true,
+        "padding_top": 16,
+        "padding_bottom": 36,
+        "link_overlay": true
       }
     },
     "custom_multicolumn_P9RKTA": {
@@ -678,6 +734,7 @@
   "order": [
     "slideshow_WrahjT",
     "custom_multicolumn_UF9WXU",
+    "multicolumn_6iiz78",
     "custom_multicolumn_P9RKTA",
     "multicolumn_aiMXwV",
     "multicolumn_GxnrTY",
