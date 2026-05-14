@@ -570,10 +570,11 @@
       "type": "video",
       "name": "t:sections.video.presets.name",
       "settings": {
-        "heading": "NiiMbot D101 Thermal Printer",
+        "heading": "NiiMbot B21Pro Photo Printer",
         "heading_size": "h2",
         "enable_video_looping": true,
-        "video_url": "https://www.youtube.com/watch?v=nF06SDVWDVs",
+        "video": "shopify://files/videos/手账B21PRO.mp4",
+        "video_url": "",
         "description": "",
         "full_width": false,
         "color_scheme": "",
