@@ -31,6 +31,25 @@
             "color_scheme": "scheme-1"
           }
         },
+        "slide_PHQ6hU": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_2026_5_14_10_58_09.png",
+            "image_mobile": "shopify://shop_images/ChatGPT_Image_2026_5_14_11_11_14.png",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://products/niimbot-b21-pro-300dpi-hd-2-inch-bluetooth-label-printer-red-black-text-options",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
         "slide_qfpAn8": {
           "type": "slide",
           "settings": {
@@ -87,34 +106,14 @@
             "text_alignment_mobile": "center",
             "color_scheme": "scheme-1"
           }
-        },
-        "slide_PHQ6hU": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/10_rolls_at_50_off_banner_fbcd8234-fed6-49d5-981b-1c67bd5a51cd.jpg",
-            "image_mobile": "shopify://shop_images/10_rolls_at_505_off_banner_mobile.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://collections/10-rolls-value-pack",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
         }
       },
       "block_order": [
         "slide_iVQKeW",
+        "slide_PHQ6hU",
         "slide_qfpAn8",
         "slide_RjCiNU",
-        "slide_ttYp4p",
-        "slide_PHQ6hU"
+        "slide_ttYp4p"
       ],
       "custom_css": [
         ".slideshow__controls {position: absolute; bottom: 10px; width: 100%; border: none;}",
