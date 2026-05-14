@@ -137,6 +137,58 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "custom_multicolumn_P9RKTA": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "column_deM4ii": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/176e2c294693ddb2902f6c43d32829fa.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_NWHBPM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_2026_5_13_17_40_44_b04378eb-1d6f-40bd-b5bf-af8ea9532f15.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_deM4ii",
+        "column_NWHBPM"
+      ],
+      "disabled": true,
+      "name": "Custom multicolumn",
+      "settings": {
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "pagination_style": "counter",
+        "layout": "row",
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "link_overlay": false
+      }
+    },
     "multicolumn_aiMXwV": {
       "type": "multicolumn",
       "blocks": {
@@ -568,77 +620,17 @@
         "show_text_below": true,
         "accessibility_info": ""
       }
-    },
-    "custom_multicolumn_P9RKTA": {
-      "type": "custom-multicolumn",
-      "blocks": {
-        "column_deM4ii": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_NWHBPM": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_y7H4MN": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_deM4ii",
-        "column_NWHBPM",
-        "column_y7H4MN"
-      ],
-      "disabled": true,
-      "name": "Custom multicolumn",
-      "settings": {
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "pagination_style": "counter",
-        "layout": "row",
-        "title": "Multicolumn",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "button_label": "Button label",
-        "button_link": "",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "link_overlay": false
-      }
     }
   },
   "order": [
     "slideshow_WrahjT",
+    "custom_multicolumn_P9RKTA",
     "multicolumn_aiMXwV",
     "multicolumn_GxnrTY",
     "custom_multicolumn_ggnfqM",
     "multicolumn_4qmgQQ",
     "177491975492746bf6",
     "video_CWXcFm",
-    "slideshow_RfiX63",
-    "custom_multicolumn_P9RKTA"
+    "slideshow_RfiX63"
   ]
 }
