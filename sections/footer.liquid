@@ -25,6 +25,12 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+      .link-list-mobile .footer-block__heading {
+      margin-bottom: 0;
+      border-bottom: 1px #9E9E9E solid;
+      padding-bottom: 20px;
+    }
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
@@ -75,9 +81,11 @@
                   style="--animation-order: {{ forloop.index }};"
                 {% endif %}
               >
+                {% unless block.type == 'link_list' %}
                 {%- if block.settings.heading != blank -%}
                   <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
                 {%- endif -%}
+                {% endunless %}
 
                 {%- case block.type -%}
                   {%- when '@app' -%}
@@ -89,6 +97,50 @@
                      <div class="footer-icon-wrapper">{{ 'icon-envelop.svg' | inline_asset_content }}{{ block.settings.email }}</div>
                     </div>
                   {%- when 'link_list' -%}
+                  <div class="link-list-desktop small-hide">
+                      {%- if block.settings.heading != blank -%}
+                        <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                      {%- endif -%}
+                      {%- if block.settings.menu != blank -%}
+                        <ul class="footer-block__details-content list-unstyled">
+                          {%- for link in block.settings.menu.links -%}
+                            <li>
+                              <a
+                                href="{{ link.url }}"
+                                class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+                              >
+                                {{ link.title }}
+                              </a>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
+                  </div>
+                  <div class="link-list-mobile medium-hide large-up-hide">
+                    <details id="Details-{{ block.id }}-{{ section.id }}">
+                    <summary id="Summary-{{ block.id }}-{{ section.id }}">
+                      {%- if block.settings.heading != blank -%}
+                        <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                      {%- endif -%}
+                      {% render 'icon-caret' %}
+                    </summary>
+                      {%- if block.settings.menu != blank -%}
+                        <ul class="footer-block__details-content list-unstyled">
+                          {%- for link in block.settings.menu.links -%}
+                            <li>
+                              <a
+                                href="{{ link.url }}"
+                                class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+                              >
+                                {{ link.title }}
+                              </a>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
+                    </details>  
+                  </div>
+                  {% comment %}
                     {%- if block.settings.menu != blank -%}
                       <ul class="footer-block__details-content list-unstyled">
                         {%- for link in block.settings.menu.links -%}
@@ -97,12 +149,13 @@
                               href="{{ link.url }}"
                               class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
                             >
-                              {{ link.title | escape }}
+                              {{ link.title }}
                             </a>
                           </li>
                         {%- endfor -%}
                       </ul>
                     {%- endif -%}
+                {% endcomment %}
                   {%- when 'brand_information' -%}
                     <div class="footer-block__brand-info">
                       {%- if settings.brand_image != blank -%}

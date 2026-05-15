@@ -608,7 +608,7 @@ class ModalDialog extends HTMLElement {
     });
     if (this.classList.contains('media-modal')) {
       this.addEventListener('pointerup', (event) => {
-        if (event.pointerType === 'mouse' && !event.target.closest('deferred-media, product-model')) this.hide();
+        if (event.pointerType === 'mouse' && !event.target.closest('deferred-media, product-model, .slider-button')) this.hide();
       });
     } else {
       this.addEventListener('click', (event) => {

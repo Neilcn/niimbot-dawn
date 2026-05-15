@@ -32,26 +32,99 @@
       aria-label="{{ 'products.modal.label' | t }}"
       tabindex="0"
     >
-      {%- liquid
-        if product.selected_or_first_available_variant.featured_media != null
-          assign media = product.selected_or_first_available_variant.featured_media
-          render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: section.settings.hide_variants
-        endif
-      -%}
+      <slider-component class="slider-mobile-gutter">
+        <div class="slider-buttons absolute small-hide medium-hide">
+          <button
+            type="button"
+            class="slider-button slider-button--prev"
+            name="previous"
+            aria-label="{{ 'general.slider.previous_slide' | t }}"
+            aria-controls="Slider-Modal-{{ section.id }}"
+          >
+            <span class="svg-wrapper">
+              {{- 'icon-caret.svg' | inline_asset_content -}}
+            </span>
+          </button>
+          <div class="slider-counter caption">
+            <span class="slider-counter--current">1</span>
+            <span aria-hidden="true"> / </span>
+            <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+            <span class="slider-counter--total">{{ product.media.size }}</span>
+          </div>
+          <button
+            type="button"
+            class="slider-button slider-button--next"
+            name="next"
+            aria-label="{{ 'general.slider.next_slide' | t }}"
+            aria-controls="Slider-Modal-{{ section.id }}"
+          >
+            <span class="svg-wrapper">
+              {{- 'icon-caret.svg' | inline_asset_content -}}
+            </span>
+          </button>
+        </div>
 
-      {%- for media in product.media -%}
-        {%- liquid
-          if section.settings.hide_variants and variant_images contains media.src or variant_images contains media.id
-            assign variant_image = true
-          else
-            assign variant_image = false
-          endif
+        <ul
+          id="Slider-Modal-{{ section.id }}"
+          class="product-media-modal__slider grid grid--1-col slider slider--desktop slider--tablet"
+          role="list"
+        >
+          {%- liquid
+            assign featured_media = product.selected_or_first_available_variant.featured_media
+            if featured_media != null
+              assign featured_media_id = featured_media.id
+            else
+              assign featured_media_id = nil
+            endif
+          -%}
+          {%- if featured_media_id != nil -%}
+            <li id="Slide-Modal-{{ section.id }}-featured" class="grid__item slider__slide slider__slide--full-width">
+              {%- render 'product-media', media: featured_media, loop: section.settings.enable_video_looping, variant_image: section.settings.hide_variants -%}
+            </li>
+          {%- endif -%}
+          {%- for media in product.media -%}
+            {%- unless media.id == featured_media_id -%}
+              {%- liquid
+                if section.settings.hide_variants and variant_images contains media.src or variant_images contains media.id
+                  assign variant_image = true
+                else
+                  assign variant_image = false
+                endif
+              -%}
+              <li id="Slide-Modal-{{ section.id }}-{{ forloop.index }}" class="grid__item slider__slide slider__slide--full-width">
+                {%- render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: variant_image -%}
+              </li>
+            {%- endunless -%}
+          {%- endfor -%}
+        </ul>
 
-          unless media.id == product.selected_or_first_available_variant.featured_media.id
-            render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: variant_image
-          endunless
-        -%}
-      {%- endfor -%}
+        <div class="slider-buttons absolute large-up-hide">
+          <button
+            type="button"
+            class="slider-button slider-button--prev"
+            name="previous"
+            aria-label="{{ 'general.slider.previous_slide' | t }}"
+            aria-controls="Slider-Modal-{{ section.id }}"
+          >
+            <span class="svg-wrapper">{{- 'icon-caret.svg' | inline_asset_content -}}</span>
+          </button>
+          <div class="slider-counter caption">
+            <span class="slider-counter--current">1</span>
+            <span aria-hidden="true"> / </span>
+            <span class="visually-hidden">{{ 'general.slider.of' | t }}</span>
+            <span class="slider-counter--total">{{ product.media.size }}</span>
+          </div>
+          <button
+            type="button"
+            class="slider-button slider-button--next"
+            name="next"
+            aria-label="{{ 'general.slider.next_slide' | t }}"
+            aria-controls="Slider-Modal-{{ section.id }}"
+          >
+            <span class="svg-wrapper">{{- 'icon-caret.svg' | inline_asset_content -}}</span>
+          </button>
+        </div>
+      </slider-component>
     </div>
   </div>
 </product-modal>

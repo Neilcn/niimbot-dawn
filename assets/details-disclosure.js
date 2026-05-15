@@ -58,10 +58,12 @@ class HeaderMenu extends DetailsDisclosure {
         });
       });
 
-      item.addEventListener("click", async (e) => {
-        console.log (e.target);
-        return;
-          window.location.href = item.dataset.url;
+      item.addEventListener("click", (e) => {
+        const summary = e.target.closest('summary[data-url]');
+        if (summary && item.classList.contains('submenu')) {
+          e.preventDefault();
+          window.location.href = summary.dataset.url;
+        }
       });
 
     });
