@@ -1,0 +1,23 @@
+{% comment %}
+  Simple Bundles frontent customizations – Option Image Swap Data Snippet
+  
+  Place this snippet in your product template (e.g., sections/main-product.liquid). Just before {% schema %} add {% render 'sb-image-swap-data' %}
+
+  This should be BEFORE the sb-image-swap.js script loads.
+
+  This outputs the bundled_variants metafield as a JS global so the image swap
+  script can reliably map dropdown options → product images on ANY theme.
+{% endcomment %}
+
+{%- liquid
+  assign bv = product.selected_or_first_available_variant.metafields.simple_bundles.bundled_variants.value
+  if bv == blank
+    assign bv = product.metafields.simple_bundles.bundled_variants.value
+  endif
+-%}
+
+{%- if bv != blank -%}
+  <script>
+    window.__SB_BUNDLED_VARIANTS__ = {{ bv | json }};
+  </script>
+{%- endif -%}
