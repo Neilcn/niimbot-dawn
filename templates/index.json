@@ -12,6 +12,26 @@
     "slideshow_WrahjT": {
       "type": "slideshow",
       "blocks": {
+        "slide_RjCiNU": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/niimbot_desktop.png",
+            "image_mobile": "shopify://shop_images/niimbot_mobile.png",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://collections",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": ""
+          }
+        },
         "slide_iVQKeW": {
           "type": "slide",
           "settings": {
@@ -69,26 +89,6 @@
             "color_scheme": "scheme-1"
           }
         },
-        "slide_RjCiNU": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/6f13ba47-bf55-4ab9-a33d-569827855307.png",
-            "image_mobile": "shopify://shop_images/ChatGPT_Image_2026_5_13_17_24_24.png",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://products/custom-labels-choose-your-own-style-1",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": ""
-          }
-        },
         "slide_ttYp4p": {
           "type": "slide",
           "disabled": true,
@@ -111,10 +111,10 @@
         }
       },
       "block_order": [
+        "slide_RjCiNU",
         "slide_iVQKeW",
         "slide_PHQ6hU",
         "slide_qfpAn8",
-        "slide_RjCiNU",
         "slide_ttYp4p"
       ],
       "custom_css": [
