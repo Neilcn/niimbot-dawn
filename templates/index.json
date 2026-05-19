@@ -572,6 +572,7 @@
     },
     "video_CWXcFm": {
       "type": "video",
+      "disabled": true,
       "name": "t:sections.video.presets.name",
       "settings": {
         "heading": "NiiMbot M2 Label Printer",
@@ -624,6 +625,16 @@
         "show_text_below": true,
         "accessibility_info": ""
       }
+    },
+    "custom_liquid_zhq6BE": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<style>\n/* 完全和Banner同宽，视频居中显示 */\n.video-carousel {\n  width: 100% !important;\n  max-width: 100% !important;\n  aspect-ratio: 16 / 6;\n  margin: 0 auto;\n  overflow: hidden;\n  position: relative;\n  background: transparent;\n}\n\n.video-slides {\n  display: flex;\n  width: 200%;\n  height: 100%;\n  transition: transform 0.4s ease;\n}\n\n.video-slide {\n  width: 50%;\n  height: 100%;\n  display: flex;        /* 让视频居中 */\n  align-items: center;  /* 垂直居中 */\n  justify-content: center; /* 水平居中 */\n}\n\n.video-slide video {\n  width: 78%;         /* 你要的78%宽度 */\n  height: 100%;\n  object-fit: cover;\n  outline: none;\n  border: none;\n  display: block;\n}\n\n/* 左右箭头 */\n.carousel-arrow {\n  position: absolute;\n  top: 50%;\n  transform: translateY(-50%);\n  background: rgba(0,0,0,0.4);\n  color: white;\n  border: none;\n  width: 44px;\n  height: 44px;\n  border-radius: 50%;\n  font-size: 20px;\n  cursor: pointer;\n  z-index: 99;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.prev { left: 20px; }\n.next { right: 20px; }\n</style>\n\n<div class=\"video-carousel\">\n  <div class=\"video-slides\">\n    <div class=\"video-slide\">\n      <video controls muted playsinline>\n        <source src=\"https://cdn.shopify.com/videos/c/o/v/936345c0913d4e6b9335d54f21d56ca4.mp4\" type=\"video/mp4\">\n      </video>\n    </div>\n    <div class=\"video-slide\">\n      <video controls muted playsinline>\n        <source src=\"https://cdn.shopify.com/videos/c/o/v/c9dd4b3bbb124063a0b3d3115c902628.mp4\" type=\"video/mp4\">\n      </video>\n    </div>\n  </div>\n\n  <button class=\"carousel-arrow prev\">←</button>\n  <button class=\"carousel-arrow next\">→</button>\n</div>\n\n<script>\nconst slides = document.querySelector('.video-slides');\nconst prev = document.querySelector('.prev');\nconst next = document.querySelector('.next');\nlet index = 0;\n\nfunction update() {\n  slides.style.transform = `translateX(-${index * 50}%)`;\n}\n\nprev.addEventListener('click', () => {\n  index = index === 0 ? 1 : 0;\n  update();\n});\n\nnext.addEventListener('click', () => {\n  index = index === 1 ? 0 : 1;\n  update();\n});\n\nsetInterval(() => {\n  index = index === 1 ? 0 : 1;\n  update();\n}, 3000);\n</script>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -635,6 +646,7 @@
     "multicolumn_4qmgQQ",
     "177491975492746bf6",
     "video_CWXcFm",
-    "slideshow_RfiX63"
+    "slideshow_RfiX63",
+    "custom_liquid_zhq6BE"
   ]
 }
