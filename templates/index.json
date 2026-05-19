@@ -574,10 +574,10 @@
       "type": "video",
       "name": "t:sections.video.presets.name",
       "settings": {
-        "heading": "NiiMbot B21Pro Photo Printer",
+        "heading": "NiiMbot M2 Label Printer",
         "heading_size": "h2",
         "enable_video_looping": true,
-        "video": "shopify://files/videos/手账B21PRO.mp4",
+        "video": "shopify://files/videos/M2.mp4",
         "video_url": "",
         "description": "",
         "full_width": false,
