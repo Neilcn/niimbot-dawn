@@ -200,6 +200,11 @@
         "type": "shopify://apps/bogos-io-free-gift/blocks/app-embed/0432bba6-720a-4e95-be5a-b868386f7aa6",
         "disabled": false,
         "settings": {}
+      },
+      "4672466289803156472": {
+        "type": "shopify://apps/essential-grid-gallery/blocks/app-embed/b252af1e-c43a-4272-b19c-e87bc447c686",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
