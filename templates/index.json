@@ -50,6 +50,25 @@
             "color_scheme": "scheme-1"
           }
         },
+        "slide_ttYp4p": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_2026_5_20_14_12_36.png",
+            "image_mobile": "shopify://shop_images/ChatGPT_Image_2026_5_20_14_39_04.png",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://products/niimbot-m2-thermal-transfer-label-printer",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-center",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
         "slide_PHQ6hU": {
           "type": "slide",
           "settings": {
@@ -87,34 +106,14 @@
             "text_alignment_mobile": "center",
             "color_scheme": "scheme-1"
           }
-        },
-        "slide_ttYp4p": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/ChatGPT_Image_2026_5_13_17_40_44.png",
-            "image_mobile": "shopify://shop_images/ChatGPT_Image_2026_5_13_17_41_59.png",
-            "image_overlay_opacity": 0,
-            "heading": "",
-            "heading_size": "h1",
-            "subheading": "",
-            "button_label": "",
-            "link": "https://niimbot.goaffpro.com/",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-center",
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "color_scheme": "scheme-1"
-          }
         }
       },
       "block_order": [
         "slide_RjCiNU",
         "slide_iVQKeW",
+        "slide_ttYp4p",
         "slide_PHQ6hU",
-        "slide_qfpAn8",
-        "slide_ttYp4p"
+        "slide_qfpAn8"
       ],
       "custom_css": [
         ".slideshow__controls {position: absolute; bottom: 10px; width: 100%; border: none;}",
