@@ -155,33 +155,6 @@
     "1775442639185abd86": {
       "type": "apps",
       "blocks": {
-        "moast_carousel_M83bEz": {
-          "type": "shopify://apps/moast/blocks/carousel/1ac7547b-5443-446c-868c-7fab4566ee16",
-          "settings": {
-            "dynamic": false,
-            "feed": "",
-            "feed_usage": "back_up",
-            "header": "",
-            "slide_type": "cards",
-            "product_cards": "none",
-            "autoplay_mode": "none",
-            "autoscroll_duration": 0,
-            "slide_size": "250",
-            "aspect_ratio": "vertical",
-            "border": 0,
-            "border_color": "linear-gradient(to right, #833ab4, #fd1d1d, #fcb045)",
-            "slide_rounding": "20",
-            "slide_spacing": 16,
-            "padding_top": 40,
-            "pagination": "below",
-            "alignment": "center",
-            "click_action": "fullscreen",
-            "float_location": "bottom_right",
-            "float_size": "medium",
-            "show_captions": false,
-            "custom_css": ""
-          }
-        },
         "judge_me_reviews_review_widget_bcM37B": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
@@ -193,7 +166,6 @@
         }
       },
       "block_order": [
-        "moast_carousel_M83bEz",
         "judge_me_reviews_review_widget_bcM37B"
       ],
       "settings": {
