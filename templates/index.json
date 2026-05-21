@@ -420,6 +420,16 @@
             "link_label": "",
             "link": "shopify://products/niimbot-m2-electrician-bundle-for-wire-cable-identification"
           }
+        },
+        "column_Bdm9EK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/for-office-image.png",
+            "title": "Office Labeling",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/niimbot-m2_h-office-labeling-bundle-for-file-folders-asset-management-cable-identification-name-badges"
+          }
         }
       },
       "block_order": [
@@ -428,7 +438,8 @@
         "column_hydU6R",
         "column_CKgBQh",
         "column_EkHrAc",
-        "column_xXfkky"
+        "column_xXfkky",
+        "column_Bdm9EK"
       ],
       "name": "Custom multicolumn",
       "settings": {
