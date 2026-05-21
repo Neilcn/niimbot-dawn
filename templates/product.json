@@ -218,6 +218,7 @@
       "block_order": [
         "moast_carousel_3K7e6L"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
