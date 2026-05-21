@@ -172,18 +172,6 @@
         "include_margins": true
       }
     },
-    "1779262265cd6e374e": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "1779270195e8e3487e": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
-    },
     "1779332236d04b87de": {
       "type": "apps",
       "blocks": {
@@ -226,9 +214,7 @@
   "order": [
     "main",
     "related-products",
-    "1775442639185abd86",
-    "1779262265cd6e374e",
-    "1779270195e8e3487e",
-    "1779332236d04b87de"
+    "1779332236d04b87de",
+    "1775442639185abd86"
   ]
 }
