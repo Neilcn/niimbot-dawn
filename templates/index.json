@@ -430,6 +430,26 @@
             "link_label": "",
             "link": "shopify://products/niimbot-m2_h-office-labeling-bundle-for-file-folders-asset-management-cable-identification-name-badges"
           }
+        },
+        "column_qPpYjm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/for-horticulture-plant-nursery-garden-image.png",
+            "title": "Horticulture & Plant Nursery & Garden Labeling",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/niimbot-m2_h-horticulture-plant-nursery-garden-bundle-durable-waterproof-uv-resistant-plant-labels"
+          }
+        },
+        "column_Y7498J": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/for-journaling-image.png",
+            "title": "Journaling Labeling",
+            "text": "",
+            "link_label": "",
+            "link": "shopify://products/niimbot-b21-pro-journaling-label-printer-perfect-for-planners-dates-mood-tracking"
+          }
         }
       },
       "block_order": [
@@ -439,7 +459,9 @@
         "column_CKgBQh",
         "column_EkHrAc",
         "column_xXfkky",
-        "column_Bdm9EK"
+        "column_Bdm9EK",
+        "column_qPpYjm",
+        "column_Y7498J"
       ],
       "name": "Custom multicolumn",
       "settings": {
