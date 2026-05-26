@@ -168,13 +168,6 @@
           "greeting_message": ""
         }
       },
-      "1607042082102552966": {
-        "type": "shopify://apps/yuko-order-limits/blocks/order-limit-embed/52f9f134-3e39-4eea-b253-74233a4918d4",
-        "disabled": false,
-        "settings": {
-          "custom_javascript": "function hideCollectionMessages() {\n  if (window.location.pathname.includes(\"/collections/\")) {\n    document.querySelectorAll(\".yuko-featured-limit-msg\").forEach(el => {\n      el.style.display = \"none\";\n    });\n  }\n}\n\ndocument.addEventListener(\"DOMContentLoaded\", hideCollectionMessages);\n\nconst observer = new MutationObserver(hideCollectionMessages);\nobserver.observe(document.body, { childList: true, subtree: true });"
-        }
-      },
       "124348908681409149": {
         "type": "shopify://apps/simple-bundles-kits/blocks/simple-bundles-v2/e553276b-36b2-446d-b80a-aa47fe5f96ac",
         "disabled": false,
@@ -201,25 +194,11 @@
         "disabled": false,
         "settings": {}
       },
-      "4672466289803156472": {
-        "type": "shopify://apps/essential-grid-gallery/blocks/app-embed/b252af1e-c43a-4272-b19c-e87bc447c686",
-        "disabled": false,
-        "settings": {}
-      },
-      "16510219240223340300": {
-        "type": "shopify://apps/whatmore-shoppable-videos/blocks/app-embed/20db8a72-315a-4364-8885-64219ee48303",
+      "1607042082102552966": {
+        "type": "shopify://apps/yuko-order-limits/blocks/order-limit-embed/52f9f134-3e39-4eea-b253-74233a4918d4",
         "disabled": false,
         "settings": {
-          "minimized_video_position": "right",
-          "horizontal-padding": 5,
-          "vertical-padding": 150,
-          "app-size": 50,
-          "minimized_video_position_landscape": "right",
-          "horizontal-padding-landscape": 5,
-          "vertical-padding-landscape": 150,
-          "app-size-landscape": 50,
-          "video-title": "",
-          "use-variant": "false"
+          "custom_javascript": "function hideCollectionMessages() {\n  if (window.location.pathname.includes(\"/collections/\")) {\n    document.querySelectorAll(\".yuko-featured-limit-msg\").forEach(el => {\n      el.style.display = \"none\";\n    });\n  }\n}\n\n// Removes the duplicate Yuko line-message that gets injected inside\n// `.cart-item__details` on stores using HulkApps (its data-key on inner\n// elements misroutes Yuko's row lookup). Keeps the canonical message inside\n// the theme's native `.cart-item__error` slot. No-op on stores without the\n// duplicate.\nfunction dedupeYukoLineMessages() {\n  document.querySelectorAll('tr.cart-item, .cart-item, [data-line-item], [data-cart-item]').forEach(function (row) {\n    var hasNative = row.querySelector('[data-yuko-order-limit=\"native-line-message\"]');\n    if (!hasNative) return;\n    row.querySelectorAll('.yuko-order-limit-msg-row').forEach(function (el) {\n      el.remove();\n    });\n  });\n}\n\nfunction runYukoCustomTweaks() {\n  hideCollectionMessages();\n  dedupeYukoLineMessages();\n}\n\ndocument.addEventListener(\"DOMContentLoaded\", runYukoCustomTweaks);\n\nconst observer = new MutationObserver(runYukoCustomTweaks);\nobserver.observe(document.body, { childList: true, subtree: true });"
         }
       }
     },
