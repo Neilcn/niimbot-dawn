@@ -15,8 +15,8 @@
         "slide_RjCiNU": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/niimbot_desktop.png",
-            "image_mobile": "shopify://shop_images/niimbot_mobile.png",
+            "image": "shopify://shop_images/banner.png",
+            "image_mobile": "shopify://shop_images/ChatGPT_Image_2026_5_26_14_55_02.png",
             "image_overlay_opacity": 0,
             "heading": "",
             "heading_size": "h1",
